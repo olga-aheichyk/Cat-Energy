@@ -1,0 +1,46 @@
+.example {
+  background-color: #EAEAEA;
+}
+
+.example__title {
+  @include section_title;
+  text-transform: none;
+}
+
+.example__history {
+  display: flex;
+  flex-direction: column;
+}
+
+.example__text {
+  @include section_text;
+}
+
+.example__statistic {
+  display: flex;
+  flex-direction: column;
+}
+
+.example__list {
+  display: flex;
+}
+
+.example__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.example__number {
+  @include section_subtitle;
+}
+
+.example__number-description {
+  @include section_text;
+  font-size: 12px;
+}
+
+.example__cost {
+  @include section_subtitle (14px);
+}
+
+

@@ -2,34 +2,33 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
   <body class="page__body">
-
     <header class="header">
-      <a class="logo--header" href="index.html">
+      <a class="logo logo--header" href="index.html">
         <img src="" alt="Логотип Кэт Энерджи">
       </a>
 
-      <button class="header__toggle" type="button">
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-
-      <nav class="navigation visually-hidden">
-        <div class="navigation__list">
-          <a class="navigation__item" href="index.html">
+        <div class="navigation__list navigation__list--hidden">
+          <a class="navigation__item navigation__item--active" href="#">
             Главная
           </a>
           <a class="navigation__item" href="catalog.html">
             Каталог продукции
           </a>
-          <a class="navigation__item" href="#">
+          <a class="navigation__item" href="form.html">
             Подбор программы
           </a>
         </div>
       </nav>
-
     </header>
 
     <main class="main">
@@ -41,67 +40,67 @@
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
 
-        <form class="matching__form form" action="https://echo.htmlacademy.ru/courses" method="get">
-          <fieldset class="form__cat-data">
-            <label for="cat-name">
+        <form class="form" action="https://echo.htmlacademy.ru/courses">
+          <div class="form__cat-data">
+            <label for="cat_name">
               Имя:<sup>*</sup>
             </label>
-            <input class="form__input-text" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
+            <input class="form__input-text" type="text" name="cat-name" id="cat_name" placeholder="Барсик">
 
-            <label for="cat-weight">
+            <label for="cat_weight">
               Вес (кг):<sup>*</sup>
             </label>
-            <input class="form__input-text" type="number" name="cat-weight" id="cat-weight" placeholder="7">
+            <input class="form__input-text" type="number" name="cat-weight" id="cat_weight" placeholder="7">
 
-            <label for="cat-age">
+            <label for="cat_age">
               Возраст (лет):
             </label>
-            <input class="form__input-text" type="number" name="cat-age" id="cat-age" placeholder="7">
-          </fieldset>
+            <input class="form__input-text" type="number" name="cat-age" id="cat_age" placeholder="7">
+          </div>
 
-          <fieldset class="form__variants">
+          <div class="form__variants">
             <label for="sliming">
               Похудение
             </label>
             <input class="form__input-radio" type="radio" name="variant" value="sliming" id="sliming" checked>
 
-            <label for="weight-gain">
+            <label for="weight_gain">
               Набор массы
             </label>
-            <input class="form__input-radio" type="radio" name="variant" value="weight-gain" id="weight-gain">
+            <input class="form__input-radio" type="radio" name="variant" value="weight-gain" id="weight_gain">
 
-            <label for="need-advice">
+            <label for="need_advice">
               Не знаю (Нужен ваш совет)
             </label>
-            <input class="form__input-radio" type="radio" name="variant" value="need-advice" id="need-advice">
-          </fieldset>
+            <input class="form__input-radio" type="radio" name="variant" value="need-advice" id="need_advice">
+          </div>
 
-          <fieldset class="form__owner-data">
-            <legend>
+          <div class="form__contacts">
+            <h3 class="form__title">
               Контактные данные (владельца кота)
-            </legend>
-            <label for="owner-email">
+            </h3>
+            <label for="email">
               E-mail:<sup>*</sup>
             </label>
-            <input class="form__input-text" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com">
+            <input class="form__input-text form__input-text--email" type="email" name="owner-email" id="email" placeholder="kuklachev@gmail.com">
 
-            <label for="owner-phone">
+            <label for="phone">
               Телефон:<sup>*</sup>
             </label>
-            <input class="form__input-text" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90">
-          </fieldset>
+            <input class="form__input-text form__input-text--phone" type="tel" name="owner-phone" id="phone" placeholder="8 (960) 900-60-90">
+          </div>
 
-          <fieldset class="form__comment">
-            <legend>
+          <div class="form__comment">
+            <h3 class="form__title">
               Комментарий
-            </legend>
+            </h3>
             <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
+          </div>
 
-          <fieldset class="form__additional">
-            <legend>
+          <div class="form__additional">
+            <h3 class="form__title">
               Дополнительно
-            </legend>
+            </h3>
 
             <label for="sugar">
               Сахарозаменитель
@@ -122,7 +121,7 @@
               Витамины
             </label>
             <input class="form__input-checkbox" type="checkbox" name="vitamins" id="vitamins">
-          </fieldset>
+          </div>
 
           <input class="button" type="submit" value="отправить заявку">
         </form>
@@ -147,13 +146,13 @@
         </div>
 
         <div class="location__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6194872569674!2d30.321109616096976!3d59.93845598187608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1605772073738!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6194872569674!2d30.321109616096976!3d59.93845598187608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1605772073738!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <img class="location__here" src="" alt="Мы здесь">
         </div>
       </section>
 
       <div class="footer__bottom">
-        <div class="logo--footer">
+        <div class="logo logo--footer">
           <img src="" alt="Логотип Кэт Энерджи">
         </div>
 
@@ -171,15 +170,17 @@
 
         <p class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="copyright__text">
-              HTML Academy
-            </p>
+            HTML Academy
             <img class="copyright__logo" src="" alt="Ссылка на сайт HTML-академии">
           </a>
         </p>
       </div>
       </div>
-
     </footer>
+<<<<<<< HEAD
 
 </body>
+=======
+  </body>
+</html>
+>>>>>>> cfdf1c41a70decd9c064d52327c4e3fe1751ee28

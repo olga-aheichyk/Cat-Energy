@@ -1,0 +1,11 @@
+.button {
+  width: 280px;
+  height: 40px;
+  background-color: $basic_green;
+  @include section_subtitle(14px, center);
+  color: $white;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
