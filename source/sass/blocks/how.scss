@@ -1,0 +1,18 @@
+.how-it-work__title {
+  @include section_title;
+  text-transform: none;
+}
+
+.how-it-work__list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.how-it-work__item {
+  @include section_text;
+
+  &--nutrients {
+    background-color: tomato;
+  }
+}

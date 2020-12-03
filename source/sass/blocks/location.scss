@@ -1,0 +1,16 @@
+.location {
+  margin: 0 auto;
+}
+
+.location__card {
+  display: flex;
+}
+
+.location__title {
+  @include section_subtitle (16px, left);
+  line-height: 18px;
+}
+
+.location__text {
+  @include section_text;
+}

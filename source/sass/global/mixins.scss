@@ -1,0 +1,38 @@
+@mixin section_title ($color: $black) {
+  font-family: "Oswald", "Verdana", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: $color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin section_subtitle ($font-size: 24px, $text-align: center) {
+  font-family: "Oswald", "Verdana", sans-serif;
+  font-size: $font-size;
+  font-weight: 400;
+  color: $black;
+  text-transform: uppercase;
+  text-align: $text-align;
+}
+
+@mixin section_text ($text-align: left) {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: $special_dark-grey;
+  text-align: $text-align;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

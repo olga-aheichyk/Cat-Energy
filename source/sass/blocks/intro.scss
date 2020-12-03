@@ -1,0 +1,23 @@
+.intro {
+  background-color: $basic_green;
+  background-image: url("/img/index-background-mobile.png");
+  background-repeat: no-repeat;
+  min-height: 302px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__title {
+  @include section_title ($white);
+  text-transform: none;
+  line-height: 36px;
+}
+
+.intro__text {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  }

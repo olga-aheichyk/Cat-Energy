@@ -1,0 +1,18 @@
+.navigation__list {
+display: flex;
+flex-direction: column;
+min-height: 66px;
+width: auto;
+}
+
+.navigation__item {
+color: $black;
+font-family: "Oswald", sans-serif;
+font-size: 20px;
+text-transform: uppercase;
+text-align: center;
+}
+
+.navigation__list--hidden {
+  @include visually-hidden;
+}

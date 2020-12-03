@@ -2,13 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
   <body class="page__body">
     <header class="header">
       <a class="logo logo--header">
-        <img src="" alt="Логотип Кэт Энерджи">
+        <img src="img/logo-desktop.svg" alt="Логотип Кэт Энерджи">
       </a>
 
       <nav class="navigation">
@@ -70,6 +72,9 @@
       </section>
 
       <section class="how-it-work">
+        <h2 class="how-it-work__title">
+          Как это работает
+        </h2>
         <ul class="how-it-work__list">
           <li class="how-it-work__item how-it-work__item--nutrients">
             Функциональное питание содержит только полезные питательные вещества.
@@ -97,19 +102,23 @@
         </div>
         <div class="example__statistic">
           <dl class="example__list">
-            <dt class="example__number">
-              5 КГ
-            </dt>
-            <dd class="example__number-description">
-              снижение веса
-            </dd>
+            <div class="example__card">
+              <dt class="example__number">
+                5 КГ
+              </dt>
+              <dd class="example__number-description">
+                снижение веса
+              </dd>
+            </div>
 
-            <dt class="example__number">
-              60 ДНЕЙ
-            </dt>
-            <dd class="example__number-description">
-              затрачено времени
-            </dd>
+            <div class="example__card">
+              <dt class="example__number">
+                60 ДНЕЙ
+              </dt>
+              <dd class="example__number-description">
+                затрачено времени
+              </dd>
+            </div>
           </dl>
           <p class="example__cost">
             Затраты на питание: 15 000 РУБ.

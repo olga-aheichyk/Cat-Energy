@@ -1,0 +1,21 @@
+.variants__item {
+  background-color: #D9D9D9;
+  min-height: 266px;
+}
+
+.variants__title {
+  @include section_subtitle;
+}
+
+.variants__text {
+  @include section_text(justify);
+}
+
+.variants__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: left;
+}
