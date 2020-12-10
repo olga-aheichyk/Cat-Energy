@@ -1,11 +1,25 @@
 .button {
-  width: 280px;
-  height: 40px;
-  background-color: $basic_green;
-  @include section_subtitle(14px, center);
+  background-color: $basic-green;
+  font-family: $title-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
   color: $white;
+  padding: 7px 64px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   &:hover {
     text-decoration: none;
+    color: $white;
+    background-color: $basic-green-2;
   }
+
+  grid-row: 3;
+  grid-column: 1 / 2;
 }

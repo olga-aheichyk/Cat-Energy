@@ -1,9 +1,14 @@
 .footer {
-  display: flex;
-  flex-direction: column;
+
 }
 
 .footer__bottom {
+  @include center-wrapper;
+  background-color: $basic-grey;
+  //min-height: 236px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
 }

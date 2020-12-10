@@ -1,25 +1,5 @@
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"),
-       url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-       url("../fonts/oswaldmedium.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 @import "global/variables.scss";
 @import "global/mixins.scss";
-
-
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
@@ -35,6 +15,10 @@
 @import "blocks/location.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+@import "blocks/catalog.scss";
+@import "blocks/additional.scss";
+@import "blocks/gift.scss";
+@import "blocks/product.scss";
 
 .visually-hidden {
   @include visually-hidden;

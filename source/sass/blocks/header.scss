@@ -1,3 +1,6 @@
 .header {
+  @include center-wrapper;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
