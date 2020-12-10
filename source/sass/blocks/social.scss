@@ -9,26 +9,22 @@
 .social__item {
   width: 30px;
   height: 30px;
+
   &--vk {
     background: url("../img/icon_vkontakte.svg");
     background-repeat: no-repeat;
     background-position: center;
-
   }
 
   &--ig {
     background: url("../img/icon_instagram.svg");
     background-repeat: no-repeat;
     background-position: center;
-
   }
 
   &--fb {
     background: url("../img/icon_facebook.svg");
     background-repeat: no-repeat;
     background-position: center;
-
   }
 }
-
-
