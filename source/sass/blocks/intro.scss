@@ -14,11 +14,11 @@
     text-align: left;
     color: $black;
     min-height: 850px;
-    background-image: url(../img/index-can-tablet.png);
+    background-image: url("../img/index-can-tablet.png");
     background-size: 709px 609px;
     background-repeat: no-repeat;
     background-color: $white;
-    background-position: 0px 220px;
+    background-position: 0 220px;
   }
 }
 
@@ -49,15 +49,15 @@
   }
 }
 
- .intro__text::after {
+.intro__text::after {
   display: block;
   content: url("../img/index-can-mobile.png");
   position: absolute;
   top: 29px;
   left: 1px;
+
   @media (min-width: $tablet-width) {
     display: none;
     content: none;
   }
 }
-

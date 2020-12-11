@@ -1,6 +1,4 @@
-.footer {
-
-}
+//.footer {}
 
 .footer__bottom {
   @include center-wrapper;
@@ -10,5 +8,4 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
 }

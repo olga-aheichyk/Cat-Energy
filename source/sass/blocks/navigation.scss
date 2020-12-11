@@ -10,7 +10,6 @@
     gap: 20px;
     justify-content: space-between;
   }
-
 }
 
 .navigation__item {
@@ -34,6 +33,6 @@
 
 .navigation__list--hidden {
   @media (max-width: $mobile-width-only) {
-  @include visually-hidden;
+    @include visually-hidden;
   }
 }

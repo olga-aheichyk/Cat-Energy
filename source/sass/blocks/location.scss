@@ -1,6 +1,4 @@
-.location {
-
-}
+//.location {}
 
 .location__card {
   @include center-wrapper;
@@ -33,6 +31,7 @@
   position: absolute;
   top: 38%;
   left: 40%;
+
   @media (min-width: $tablet-width) {
     width: 113px;
   }

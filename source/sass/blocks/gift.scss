@@ -12,6 +12,7 @@
     background-size: 708px;
     background-position: 0 63%;
   }
+
   @media (min-width: $desktop-width) {
     width: $desktop-width;
   }
@@ -26,7 +27,6 @@
   width: 161px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .gift__title::before {
