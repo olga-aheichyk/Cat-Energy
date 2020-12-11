@@ -1,18 +1,43 @@
+.how-it-work {
+  @include center-wrapper;
+  margin-top: 20px;
+}
+
 .how-it-work__title {
-  @include section_title;
-  text-transform: none;
+  font-family: $title-font;
+  font-size: 36px;
+  text-align: left;
+  margin-bottom: 38px;
 }
 
 .how-it-work__list {
-  display: flex;
-  flex-direction: column;
   list-style-type: none;
+  padding-left: 0;
 }
 
 .how-it-work__item {
-  @include section_text;
+  color: $special-dark-grey;
+  min-height: 60px;
+  padding-left: 80px;
+  margin-bottom: 24px;
 
   &--nutrients {
-    background-color: tomato;
+    background-image: url("../img/nutrients_icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--powder {
+    background-image: url("../img/powder_icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--meal {
+    background-image: url("../img/meal_icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--time {
+    background-image: url("../img/time_icon.svg");
+    background-repeat: no-repeat;
   }
 }

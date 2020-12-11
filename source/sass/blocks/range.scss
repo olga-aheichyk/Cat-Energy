@@ -1,3 +1,32 @@
+.range {
+  padding-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
 .range__text {
-  @include section_subtitle (16px);
+  font-family: $title-font;
+  font-size: 16px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.range__scale {
+  border: 1px solid $special-grey;
+  border-radius: 5px;
+  width: 20%;
+  height: 10px;
+  background-color: $white;
+  align-self: center;
+}
+
+.range__mark {
+  border-radius: 5px;
+  width: 50%;
+  height: 6px;
+  background-color: $basic-green;
+  align-self: center;
 }

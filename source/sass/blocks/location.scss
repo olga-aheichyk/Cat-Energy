@@ -1,16 +1,38 @@
-.location {
-  margin: 0 auto;
-}
+//.location {}
 
 .location__card {
+  @include center-wrapper;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 114px;
 }
 
 .location__title {
-  @include section_subtitle (16px, left);
+  font-family: $title-font;
+  font-size: 16px;
+  color: $black;
+  text-transform: uppercase;
   line-height: 18px;
+  max-width: 171px;
 }
 
 .location__text {
-  @include section_text;
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 159px;
+}
+
+.location__map {
+  position: relative;
+}
+
+.location__here {
+  position: absolute;
+  top: 38%;
+  left: 40%;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+  }
 }

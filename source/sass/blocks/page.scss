@@ -1,13 +1,14 @@
 .page {
   height: 100%;
-  font-size: 18px;
-  font-family: "Oswald", "Verdana", sans-serif;
-  line-height: 27px;
+  box-sizing: border-box;
+  font-family: $text-font;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .page__body {
   min-height: 100%;
   margin: 0 auto;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $white;
+  color: $special-dark-grey-2;
 }
