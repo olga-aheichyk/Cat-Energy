@@ -27,10 +27,20 @@
   position: relative;
 }
 
+.location__iframe {
+  width: 98%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
 .location__here {
   position: absolute;
   top: 38%;
   left: 40%;
+  width: 57px;
 
   @media (min-width: $tablet-width) {
     width: 113px;

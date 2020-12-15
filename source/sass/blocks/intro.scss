@@ -1,14 +1,12 @@
 .intro {
-  @include center-wrapper;
-
-  background-color: $basic-green;
-  background-image: url("../img/index-background-cat-mobile.png");
-  background-repeat: no-repeat;
-  background-position: center top;
+  background-color: $basic-green-2;
   height: 302px;
   font-family: $title-font;
   color: $white;
   text-align: center;
+  background-image: url("../img/index-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -16,48 +14,64 @@
     min-height: 850px;
     background-image: url("../img/index-can-tablet.png");
     background-size: 709px 609px;
-    background-repeat: no-repeat;
+    //background-repeat: no-repeat;
     background-color: $white;
-    background-position: 0 220px;
+    //background-position: -70px 190px;
+    background-position: center center;
   }
+
+  @media (min-width: $desktop-width) {
+    background-size: 552px 499px;
+    //background-position: 340px 60px;
+    z-index: 2;
+  }
+}
+
+.intro__wrapper {
+  @include center-wrapper;
 }
 
 .intro__title {
   font-size: 36px;
-  line-height: 36px;
+  //line-height: 36px;
   padding-top: 27px;
   padding-bottom: 25px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 60px;
     width: 60%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
+  }
 }
+
+
+.intro__title::after {
+  display: block;
+  content: url("../img/index-can-mobile.png");
+  position: absolute;
+  top: 162px;
+  left: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 
 .intro__text {
   font-size: 14px;
   text-transform: uppercase;
-  position: relative;
+  //position: relative;
   margin-bottom: 270px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
-    position: static;
+    //position: static;
     margin-bottom: 40px;
   }
 }
 
-.intro__text::after {
-  display: block;
-  content: url("../img/index-can-mobile.png");
-  position: absolute;
-  top: 29px;
-  left: 1px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-    content: none;
-  }
-}

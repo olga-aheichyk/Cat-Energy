@@ -29,7 +29,7 @@
 }
 
 .variants__item--sliming {
-  background-image: url("../img/cat_slim.svg");
+  background-image: url("../img/cat-slim-icon.svg");
   background-repeat: no-repeat;
   background-position: 20px 20px;
 
@@ -45,7 +45,7 @@
 }
 
 .variants__item--weight-gain {
-  background-image: url("../img/cat_muscle.svg");
+  background-image: url("../img/cat-muscle-icon.svg");
   background-repeat: no-repeat;
   background-position: 20px 20px;
 
@@ -109,10 +109,10 @@
 }
 
 .variants__link::after {
-  content: url("../img/icon_arrow.svg");
+  content: url("../img/arrow-icon.svg");
   margin-left: 10px;
 
   &:hover {
-    content: url("../img/icon_arrow_hover.svg");
+    content: url("../img/arrow-icon-hover.svg");
   }
 }

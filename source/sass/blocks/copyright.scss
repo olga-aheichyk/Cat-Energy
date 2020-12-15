@@ -1,4 +1,6 @@
-//.copyright {}
+.copyright {
+  padding: 20px;
+}
 
 .copyright__link {
   display: flex;
@@ -13,4 +15,8 @@
   &:hover {
     text-decoration: none;
   }
+}
+
+.copyright__logo {
+  margin-left: 30px;
 }

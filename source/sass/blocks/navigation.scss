@@ -1,3 +1,7 @@
+.navigation {
+  z-index: 1;
+}
+
 .navigation__toggle {
   @media (min-width: $tablet-width) {
     display: none;
@@ -19,6 +23,10 @@
   line-height: 24px;
   text-transform: uppercase;
   padding-bottom: 5px;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 
   &--active {
     border-bottom: 3px solid $basic-green;

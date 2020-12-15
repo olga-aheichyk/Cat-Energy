@@ -1,7 +1,10 @@
 .example {
-  @include center-wrapper;
   margin-top: 20px;
   background-color: $basic-grey-2;
+}
+
+.example__wrapper {
+  @include center-wrapper;
 }
 
 .example__title {
@@ -62,8 +65,30 @@
   text-align: center;
 }
 
-//.example__photo-before {}
+.example__photo-before {
+  @media (min-width: $tablet-width) {
+    width: 354px;
+    height: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 365px;
+    height: 536px;
+  }
+}
 
 .example__photo-after {
-  @include visually-hidden;
+  @media (max-width: $mobile-width-only) {
+    @include visually-hidden;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 354px;
+    height: 607px
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+    height: 654px;
+  }
 }
