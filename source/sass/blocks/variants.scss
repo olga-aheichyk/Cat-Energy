@@ -1,6 +1,6 @@
 .variants {
   @include center-wrapper;
-  margin-top: 180px;
+  margin-top: 200px;
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;
@@ -15,7 +15,8 @@
 .variants__item {
   background-color: $basic-grey;
   padding: 20px;
-  margin-bottom: 20px;
+  padding-top: 12px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     padding: 50px;
@@ -42,12 +43,16 @@
     background-size: 100px;
     background-position: 40px 20px;
   }
+
+  & .variants__title {
+    margin-right: 60px;
+  }
 }
 
 .variants__item--weight-gain {
   background-image: url("../img/cat-muscle-icon.svg");
   background-repeat: no-repeat;
-  background-position: 20px 20px;
+  background-position: 13px 22px;
 
   @media (min-width: $tablet-width) {
     background-size: 268px;
@@ -59,15 +64,19 @@
     background-size: 134px;
     background-position: 20px 30px;
   }
+
+  & .variants__title {
+    margin-right: 32px;
+  }
 }
 
 .variants__title {
-  font-family: $title-font;
+  //font-family: $title-font;
   font-size: 24px;
   text-transform: uppercase;
   text-align: right;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -81,7 +90,9 @@
 
 .variants__text {
   color: $special-dark-grey;
+  font-family: $text-font;
   text-align: left;
+  line-height: 1.3571;
   padding-bottom: 20px;
   border-bottom: 1px solid $border-grey;
 
@@ -96,7 +107,9 @@
 }
 
 .variants__link {
-  font-family: $title-font;
+  display: block;
+  padding-top: 8px;
+  //font-family: $title-font;
   font-size: 16px;
   color: $black;
   text-transform: uppercase;

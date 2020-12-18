@@ -1,14 +1,14 @@
 .page {
   height: 100%;
   box-sizing: border-box;
-  font-family: $text-font;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .page__body {
   min-height: 100%;
   margin: 0 auto;
+  font-family: $title-font;
+  font-size: 14px;
+  line-height: 1.3571;
   background-color: $white;
   color: $special-dark-grey-2;
   //display: grid;

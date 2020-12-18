@@ -1,7 +1,7 @@
 .intro {
   background-color: $basic-green-2;
   height: 302px;
-  font-family: $title-font;
+  //font-family: $title-font;
   color: $white;
   text-align: center;
   background-image: url("../img/index-bg-mobile.png");
@@ -33,9 +33,8 @@
 
 .intro__title {
   font-size: 36px;
-  padding-top: 8px;
-  padding-bottom: 24px;
-
+  padding-top: 22px;
+  padding-bottom: 10px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -49,14 +48,13 @@
   }
 }
 
-
 .intro__title::after {
   @media (max-width: $mobile-width-only) {
     display: block;
     content: url("../img/index-can-mobile.png");
     position: absolute;
-    top: 162px;
-    left: 15px;
+    top: 165px;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +68,7 @@
 .intro__text {
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 270px;
+  margin-bottom: 308px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

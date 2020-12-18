@@ -2,11 +2,11 @@
   //grid-row: 1;
 
   @include center-wrapper;
+  padding-top: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
@@ -17,22 +17,16 @@
   }
 }
 
-.header--index {
+.header--index::after {
   @media (min-width: $desktop-width) {
-    color: $white;
-  }
-
-  &::after {
-    @media (min-width: $desktop-width) {
-      display: block;
-      content: url("../img/index-bg-desktop.png");
-      //background-image: url("../img/index-bg-desktop.png");
-      background-color: $basic-green-2;
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: 0;
-      width: 50vw;
-    }
+    display: block;
+    content: url("../img/index-bg-desktop.png");
+    //background-image: url("../img/index-bg-desktop.png");
+    background-color: $basic-green-2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    //z-index: 0;
+    width: 50vw;
   }
 }

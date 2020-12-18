@@ -7,8 +7,8 @@
 
   @media (max-width: $mobile-width-only) {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -16,33 +16,33 @@
   display: flex;
 
   @media (max-width: $mobile-width-only) {
-    position: absolute;
-    top: 70px;
-    left: 0;
     width: 320px;
     background-color: $white;
     flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 14px;
     flex-direction: row;
     gap: 35px;
-    padding-top: 14px;
   }
 }
 
 .navigation__item {
   color: $black;
-  font-family: $title-font;
+  //font-family: $title-font;
   font-size: 20px;
-  line-height: 20px;
+  //line-height: 20px;
   text-transform: uppercase;
 
   @media (max-width: $mobile-width-only) {
     width: 100%;
-    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
     border-bottom: 1px solid $border-grey;
     border-top: 1px solid $border-grey;
     font-weight: 500;
@@ -50,14 +50,14 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    line-height: 24px;
-    font-weight: 500;
+    //line-height: 24px;
+    font-weight: 400;
     padding-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    line-height: 30px;
+    //line-height: 30px;
   }
 
   &--active {
@@ -69,7 +69,28 @@
   &:hover {
     text-decoration: none;
     color: $black;
+    border-bottom: none;
     opacity: 60%;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+.navigation__item--index.navigation__item--active {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $white;
+
+    &:hover {
+      border-bottom: none;
+    }
   }
 }
 

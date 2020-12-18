@@ -1,13 +1,14 @@
 .how-it-work {
   @include center-wrapper;
-  margin-top: 20px;
+  margin-top: 26px;
+  margin-bottom: 40px;
 }
 
 .how-it-work__title {
-  font-family: $title-font;
+  //font-family: $title-font;
   font-size: 36px;
   text-align: left;
-  margin-bottom: 38px;
+  margin-bottom: 41px;
 }
 
 .how-it-work__list {
@@ -17,27 +18,33 @@
 
 .how-it-work__item {
   color: $special-dark-grey;
+  font-family: $text-font;
+  line-height: 1.3571;
   min-height: 60px;
   padding-left: 80px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   &--nutrients {
     background-image: url("../img/nutrients-icon.svg");
     background-repeat: no-repeat;
+    background-position: 0 -2px;
   }
 
   &--powder {
     background-image: url("../img/powder-icon.svg");
     background-repeat: no-repeat;
+    background-position: 0 -2px;
   }
 
   &--meal {
     background-image: url("../img/meal-icon.svg");
     background-repeat: no-repeat;
+    background-position: 0 -2px;
   }
 
   &--time {
     background-image: url("../img/time-icon.svg");
     background-repeat: no-repeat;
+    background-position: 0 -2px;
   }
 }

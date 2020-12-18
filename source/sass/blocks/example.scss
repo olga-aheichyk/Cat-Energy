@@ -8,16 +8,19 @@
 }
 
 .example__title {
-  font-family: $title-font;
+  //font-family: $title-font;
   font-size: 36px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
-//.example__history {}
+.example__history {
+  margin-right: 5px;
+}
 
 .example__text {
-  line-height: 18px;
+  font-family: $text-font;
+  line-height: 1.286;
 }
 
 .example__statistic {
@@ -34,7 +37,7 @@
 }
 
 .example__number {
-  font-family: $title-font;
+  //font-family: $title-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -47,6 +50,7 @@
 
 .example__number-description {
   color: $special-dark-grey;
+  font-family: $text-font;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
