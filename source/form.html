@@ -46,34 +46,34 @@
 
         <form class="form" action="https://echo.htmlacademy.ru/courses">
           <div class="form__cat-data">
-            <label for="cat_name">
+            <label class="form__label" for="cat_name">
               Имя:<sup>*</sup>
             </label>
             <input class="form__input-text" type="text" name="cat-name" id="cat_name" placeholder="Барсик">
 
-            <label for="cat_weight">
+            <label class="form__label" for="cat_weight">
               Вес (кг):<sup>*</sup>
             </label>
             <input class="form__input-text" type="number" name="cat-weight" id="cat_weight" placeholder="7">
 
-            <label for="cat_age">
+            <label class="form__label" for="cat_age">
               Возраст (лет):
             </label>
             <input class="form__input-text" type="number" name="cat-age" id="cat_age" placeholder="7">
           </div>
 
           <div class="form__variants">
-            <label for="sliming">
+            <label class="form__label" for="sliming">
               Похудение
             </label>
             <input class="form__input-radio" type="radio" name="variant" value="sliming" id="sliming" checked>
 
-            <label for="weight_gain">
+            <label class="form__label" for="weight_gain">
               Набор массы
             </label>
             <input class="form__input-radio" type="radio" name="variant" value="weight-gain" id="weight_gain">
 
-            <label for="need_advice">
+            <label class="form__label" for="need_advice">
               Не знаю (Нужен ваш совет)
             </label>
             <input class="form__input-radio" type="radio" name="variant" value="need-advice" id="need_advice">
@@ -83,12 +83,12 @@
             <h3 class="form__title">
               Контактные данные (владельца кота)
             </h3>
-            <label for="email">
+            <label class="form__label" for="email">
               E-mail:<sup>*</sup>
             </label>
             <input class="form__input-text form__input-text--email" type="email" name="owner-email" id="email" placeholder="kuklachev@gmail.com">
 
-            <label for="phone">
+            <label class="form__label" for="phone">
               Телефон:<sup>*</sup>
             </label>
             <input class="form__input-text form__input-text--phone" type="tel" name="owner-phone" id="phone" placeholder="8 (960) 900-60-90">
@@ -106,22 +106,22 @@
               Дополнительно
             </h3>
 
-            <label for="sugar">
+            <label class="form__label" for="sugar">
               Сахарозаменитель
             </label>
             <input class="form__input-checkbox" type="checkbox" name="sugar" id="sugar" checked>
 
-            <label for="water">
+            <label class="form__label" for="water">
               Питьевая вода
             </label>
             <input class="form__input-checkbox" type="checkbox" name="water" id="water">
 
-            <label for="milk">
+            <label class="form__label" for="milk">
               Молоко
             </label>
             <input class="form__input-checkbox" type="checkbox" name="milk" id="milk">
 
-            <label for="vitamins">
+            <label class="form__label" for="vitamins">
               Витамины
             </label>
             <input class="form__input-checkbox" type="checkbox" name="vitamins" id="vitamins">
@@ -130,9 +130,9 @@
           <input class="button" type="submit" value="отправить заявку">
         </form>
 
-        <small class="matching__note">
-          * — Обязательные поля
-        </small>
+        <p class="matching__note">
+          <sup>*</sup> — Обязательные поля
+        </p>
       </section>
 
     </main>
@@ -179,8 +179,8 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
                 HTML Academy
                 <!--<svg width="101" height="18" viewBox="0 0 101 18" fill="black" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="file.svg#academy_logo"></use>-->
-                </svg>
+                  <use xlink:href="file.svg#academy_logo"></use>
+                </svg>-->
               <img class="copyright__logo" src="img/htmlacademy-icon.svg" width="27" height="34" alt="Ссылка на сайт HTML-академии">
             </a>
           </p>

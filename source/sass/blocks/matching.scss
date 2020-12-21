@@ -1,0 +1,23 @@
+.matching {
+  @include center-wrapper;
+}
+
+.matching__title {
+  font-size: 36px;
+  font-weight: 400;
+  color: $black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.matching__text {
+  text-transform: uppercase;
+  color: $black;
+}
+
+.matching__note {
+  font-family: $text-font;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}

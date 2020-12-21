@@ -5,7 +5,6 @@
 }
 
 .how-it-work__title {
-  //font-family: $title-font;
   font-size: 36px;
   text-align: left;
   margin-bottom: 41px;
@@ -14,6 +13,19 @@
 .how-it-work__list {
   list-style-type: none;
   padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: 280px 280px;
+    column-gap: 153px;
+    row-gap: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 230px 230px 230px 230px;
+    column-gap: 94px;
+  }
 }
 
 .how-it-work__item {
@@ -24,10 +36,34 @@
   padding-left: 80px;
   margin-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 80px;
+    padding-left: 0;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      font-size: 280px;
+      font-family: $title-font;
+      color: $basic-grey;
+      position: absolute;
+      top: -80px;
+      right: 40px;
+      z-index: -1;
+    }
+  }
+
   &--nutrients {
     background-image: url("../img/nutrients-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 -2px;
+  }
+
+  &--nutrients::after {
+    @media (min-width: $tablet-width) {
+      content: "1";
+    }
   }
 
   &--powder {
@@ -36,15 +72,33 @@
     background-position: 0 -2px;
   }
 
+  &--powder::after {
+    @media (min-width: $tablet-width) {
+      content: "2";
+    }
+  }
+
   &--meal {
     background-image: url("../img/meal-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 -2px;
   }
 
+  &--meal::after {
+    @media (min-width: $tablet-width) {
+      content: "3";
+    }
+  }
+
   &--time {
     background-image: url("../img/time-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 -2px;
+  }
+
+  &--time::after {
+    @media (min-width: $tablet-width) {
+      content: "4";
+    }
   }
 }
