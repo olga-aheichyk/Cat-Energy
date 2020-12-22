@@ -1,0 +1,121 @@
+.form {
+  display: grid;
+}
+
+.form__cat-data {
+  display: grid;
+  grid-template-columns: max-content auto;
+  row-gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.form__input-text {
+  font-family: $title-font;
+  font-size: 16px;
+  background-color: $white;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+  padding-left: 15px;
+  border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    font-family: $title-font;
+    font-size: 16px;
+    background-color: $white;
+    color: $special-dark-grey;
+    text-transform: uppercase;
+  }
+}
+
+.form__variants {
+  display: grid;
+  grid-template-columns: 30px auto;
+  row-gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  & .form__label {
+    grid-column: 2;
+  }
+}
+
+.form__input-radio {
+  display: none;
+}
+
+.form__contacts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  row-gap: 20px;
+}
+
+.form__title {
+  font-weight: 400;
+  color: $black;
+  grid-column: 1 / -1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form__input-text--email::after {
+  display: block;
+}
+
+.form__input-text--phone {
+  display: block;
+}
+
+.form__textarea {
+  width: 100%;
+  height: 150px;
+  font-family: $title-font;
+  font-size: 16px;
+  background-color: $white;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    font-family: $title-font;
+    font-size: 16px;
+    background-color: $white;
+    color: $special-dark-grey;
+    text-transform: uppercase;
+  }
+}
+
+.form__additional {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+
+  & .form__label {
+    color: $black;
+    grid-column: 2;
+  }
+
+  & .button {
+    grid-column: 1 / -1;
+    padding: 10px 80px;
+  }
+}
+
+.form__input-checkbox {
+  display: none;
+}

@@ -11,14 +11,6 @@
   line-height: 1.3571;
   background-color: $white;
   color: $special-dark-grey-2;
-  //display: grid;
-  /*grid-template-rows: 60px auto 712px;
-
-  @media (min-width: $tablet-width) {
-    grid-template-rows: 70px auto 750px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-rows: 150px auto 550px;
-  }*/
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
