@@ -1,20 +1,26 @@
 .example {
-  @include center-wrapper;
   margin-top: 20px;
   background-color: $basic-grey-2;
 }
 
-.example__title {
-  font-family: $title-font;
-  font-size: 36px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.example__wrapper {
+  @include center-wrapper;
 }
 
-//.example__history {}
+.example__title {
+  //font-family: $title-font;
+  font-size: 36px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.example__history {
+  margin-right: 5px;
+}
 
 .example__text {
-  line-height: 18px;
+  font-family: $text-font;
+  line-height: 1.286;
 }
 
 .example__statistic {
@@ -31,7 +37,7 @@
 }
 
 .example__number {
-  font-family: $title-font;
+  //font-family: $title-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -44,6 +50,7 @@
 
 .example__number-description {
   color: $special-dark-grey;
+  font-family: $text-font;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
@@ -62,8 +69,30 @@
   text-align: center;
 }
 
-//.example__photo-before {}
+.example__photo-before {
+  @media (min-width: $tablet-width) {
+    width: 354px;
+    height: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 365px;
+    height: 536px;
+  }
+}
 
 .example__photo-after {
-  @include visually-hidden;
+  @media (max-width: $mobile-width-only) {
+    @include visually-hidden;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 354px;
+    height: 607px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+    height: 654px;
+  }
 }

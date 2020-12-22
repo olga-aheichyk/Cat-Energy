@@ -1,6 +1,32 @@
 .header {
+  //grid-row: 1;
+
   @include center-wrapper;
+  padding-top: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
+}
+
+.header--index::after {
+  @media (min-width: $desktop-width) {
+    display: block;
+    content: url("../img/index-bg-desktop.png");
+    //background-image: url("../img/index-bg-desktop.png");
+    background-color: $basic-green-2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    //z-index: 0;
+    width: 50vw;
+  }
 }

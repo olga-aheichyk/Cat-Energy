@@ -1,63 +1,81 @@
 .intro {
-  @include center-wrapper;
-
-  background-color: $basic-green;
-  background-image: url("../img/index-background-cat-mobile.png");
-  background-repeat: no-repeat;
-  background-position: center top;
+  background-color: $basic-green-2;
   height: 302px;
-  font-family: $title-font;
+  //font-family: $title-font;
   color: $white;
   text-align: center;
+  background-image: url("../img/index-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top;
 
   @media (min-width: $tablet-width) {
     text-align: left;
     color: $black;
     min-height: 850px;
     background-image: url("../img/index-can-tablet.png");
-    background-size: 709px 609px;
-    background-repeat: no-repeat;
     background-color: $white;
-    background-position: 0 220px;
+    background-position: center 261px;
+    padding-top: 33px;
+    padding-left: 88px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: none;
+    min-height: 660px;
+    padding-left: 80px;
+    padding-top: 80px;
+  }
+}
+
+.intro__wrapper {
+  @include center-wrapper;
 }
 
 .intro__title {
   font-size: 36px;
-  line-height: 36px;
-  padding-top: 27px;
-  padding-bottom: 25px;
+  padding-top: 22px;
+  padding-bottom: 10px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 60px;
+    line-height: 62px;
     width: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+  }
+}
+
+.intro__title::after {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    content: url("../img/index-can-mobile.png");
+    position: absolute;
+    top: 165px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: url("../img/index-can-desktop.png");
+    position: absolute;
+    top: -75px;
+    left: 367px;
   }
 }
 
 .intro__text {
   font-size: 14px;
   text-transform: uppercase;
-  position: relative;
-  margin-bottom: 270px;
+  margin-bottom: 308px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
-    position: static;
     margin-bottom: 40px;
   }
-}
-
-.intro__text::after {
-  display: block;
-  content: url("../img/index-can-mobile.png");
-  position: absolute;
-  top: 29px;
-  left: 1px;
 
   @media (min-width: $tablet-width) {
-    display: none;
-    content: none;
+    margin-bottom: 65px;
   }
 }
