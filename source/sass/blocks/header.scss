@@ -1,6 +1,8 @@
 .header {
   grid-row: 1;
+}
 
+.header__wrapper {
   @include center-wrapper;
   padding-top: 12px;
   display: flex;
@@ -17,16 +19,18 @@
   }
 }
 
+
 .header--index::after {
   @media (min-width: $desktop-width) {
     display: block;
     content: url("../img/index-bg-desktop.png");
+    //content: "";
     //background-image: url("../img/index-bg-desktop.png");
     background-color: $basic-green-2;
     position: absolute;
-    right: 0;
+    left: 50%;
     top: 0;
-    //z-index: 0;
+    z-index: 0;
     width: 50vw;
   }
 }

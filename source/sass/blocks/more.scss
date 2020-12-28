@@ -1,9 +1,23 @@
 .more {
   padding: 62px 0 21px;
-  border-bottom: 1px solid $border-grey;
-  border-top: 1px solid $border-grey;
+  //border-bottom: 1px solid $border-grey;
+  //border-top: 1px solid $border-grey;
   text-align: center;
   position: relative;
+}
+
+.more::before,
+.more::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    width: 100vw;
+    height: 2px;
+    background-color: $border-grey-catalog;
+    display: block;
+    margin-left: calc((100vw - 280px) / -2);
+    position: absolute;
+    top: 10px;
+  }
 }
 
 .more__title {
@@ -16,11 +30,16 @@
     display: block;
     width: 30px;
     height: 30px;
-    content: "+";
-    font-size: 60px;
+    content: url("../img/plus-icon-mobile.svg");
     position: absolute;
-    top: -10px;
+    top: 30px;
     left: 45%;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      content: url("../img/plus-icon.svg");
+    }
   }
 }
 

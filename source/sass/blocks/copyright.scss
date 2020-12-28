@@ -21,4 +21,8 @@
 
 .copyright__logo {
   margin-left: 30px;
+
+  &:hover {
+    stroke: $basic-green;
+  }
 }
