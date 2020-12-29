@@ -23,7 +23,7 @@
 .header--index::after {
   @media (min-width: $desktop-width) {
     display: block;
-    content: url("../img/index-bg-desktop.png");
+    content: url("../img/index-bg-desktop.jpg");
     //content: "";
     //background-image: url("../img/index-bg-desktop.png");
     background-color: $basic-green-2;
@@ -32,5 +32,15 @@
     top: 0;
     z-index: 0;
     width: 50vw;
+
+    @media (min-resolution: 2dppx) {
+      //content: url("../img/index-bg-desktop@2x.jpg");
+      //width: 720px;
+      //height: 694px;
+
+      //content: "";
+      //background-image: url("../img/index-bg-desktop@2x.jpg");
+      //background-size: 720px auto;
+    }
   }
 }

@@ -1,13 +1,19 @@
 .more {
-  padding: 62px 0 21px;
-  //border-bottom: 1px solid $border-grey;
-  //border-top: 1px solid $border-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 0;
   text-align: center;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+    border: 2px solid $basic-grey;
+  }
 }
 
-.more::before,
-.more::after {
+.more::before {
   @media (max-width: $mobile-width-only) {
     content: "";
     width: 100vw;
@@ -20,11 +26,30 @@
   }
 }
 
+.more::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    width: 100vw;
+    height: 2px;
+    background-color: $border-grey-catalog;
+    display: block;
+    margin-left: calc((100vw - 280px) / -2);
+    position: absolute;
+    top: 250px;
+  }
+}
+
 .more__title {
   font-family: $title-font;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
+  padding-top: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+    max-width: 107px;
+  }
 
   &::before {
     display: block;
@@ -39,6 +64,8 @@
       width: 60px;
       height: 60px;
       content: url("../img/plus-icon.svg");
+      top: 60px;
+      left: 40%;
     }
   }
 }
@@ -49,4 +76,10 @@
   padding-top: 10px;
   padding-bottom: 20px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 50px;
+    max-width: 125px;
+  }
 }

@@ -18,13 +18,14 @@
   @include center-wrapper;
 
   @media (min-width: $desktop-width) {
-    max-width: 50%;
+    //max-width: 50%;
   }
 }
 
 
 .example__title {
   font-size: 36px;
+  font-weight: 400;
   padding-top: 26px;
   padding-bottom: 26px;
 }

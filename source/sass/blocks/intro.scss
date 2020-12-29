@@ -1,12 +1,16 @@
 .intro {
   background-color: $basic-green-2;
   height: 302px;
-  //font-family: $title-font;
   color: $white;
   text-align: center;
-  background-image: url("../img/index-bg-mobile.png");
+  background-image: url("../img/index-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-bg-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -17,6 +21,11 @@
     background-position: center 261px;
     padding-top: 33px;
     padding-left: 88px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-tablet@2x.png");
+      background-size: 709px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +42,7 @@
 
 .intro__title {
   font-size: 36px;
+  font-weight: 400;
   padding-top: 22px;
   padding-bottom: 10px;
   position: relative;
