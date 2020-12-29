@@ -11,12 +11,22 @@
   justify-content: flex-end;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     height: 200px;
-    background-size: 708px;
-    background-position: 0 63%;
+    background-image: url("../img/gift-photo-tablet.jpg");
+    background-size: 708px auto;
     flex-direction: row;
     align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
