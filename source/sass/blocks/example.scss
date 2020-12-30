@@ -1,20 +1,33 @@
 .example {
   margin-top: 20px;
-  background-color: $basic-grey-2;
 }
 
 .example__wrapper {
-  @include center-wrapper;
-}
+  background-color: $basic-grey-2;
 
-.example__title {
-  font-size: 36px;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey-2;
+  }
 }
 
 .example__history {
-  margin-right: 5px;
+  @include center-wrapper;
+
+  @media (min-width: $desktop-width) {
+    //max-width: 50%;
+  }
+}
+
+
+.example__title {
+  font-size: 36px;
+  font-weight: 400;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .example__text {
@@ -23,7 +36,12 @@
 }
 
 .example__statistic {
-  margin-top: 20px;
+  @include center-wrapper;
+  padding-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 50%;
+  }
 }
 
 .example__list {
@@ -56,6 +74,13 @@
   width: 60px;
   top: 87%;
   left: 18%;
+  background-color: $basic-grey-2;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background-color: $white;
+  }
 }
 
 .example__cost {
@@ -67,30 +92,52 @@
   text-align: center;
 }
 
-.example__photo-before {
+.example__photoproove {
+  background-color: $basic-grey-2;
+}
+
+.example__comparison {
+  @include center-wrapper;
+
   @media (min-width: $tablet-width) {
-    width: 354px;
-    height: 620px;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 560px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    width: 365px;
-    height: 536px;
+    height: 500px;
+    grid-column: 2;
+  }
+}
+
+.example__photo-before {
+  width: 280px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    //clip: rect();
+    //position: absolute;
   }
 }
 
 .example__photo-after {
+  width: 251px;
+  height: auto;
+
   @media (max-width: $mobile-width-only) {
     @include visually-hidden;
   }
 
   @media (min-width: $tablet-width) {
-    width: 354px;
-    height: 607px;
+    width: 100%;
+    //clip: rect();
+    //position: absolute;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    width: 325px;
-    height: 654px;
-  }
+.example__range {
+  @include center-wrapper;
 }

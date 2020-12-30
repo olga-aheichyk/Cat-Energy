@@ -1,10 +1,16 @@
 .additional {
   @include center-wrapper;
   display: grid;
+
+  @media (min-width: $desktop-width) {
+    column-gap: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .additional__title {
   font-size: 24px;
+  font-weight: 400;
   padding-top: 27px;
   padding-bottom: 25px;
 
@@ -15,7 +21,15 @@
     padding-bottom: 40px;
   }
 
-  //&::before {}
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
 }
 
-//.additional__list {}
+.additional__list {
+  @media (min-width: $desktop-width) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}

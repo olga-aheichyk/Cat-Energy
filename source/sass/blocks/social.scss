@@ -15,20 +15,10 @@
 }
 
 .social__item {
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 16px;
+  width: 23px;
+}
 
-  &--vk {
-    background-image: url("../img/vkontakte-icon.svg");
-  }
-
-  &--ig {
-    background-image: url("../img/instagram-icon.svg");
-  }
-
-  &--fb {
-    background-image: url("../img/facebook-icon.svg");
-  }
+.social__icon:hover {
+  stroke: $basic-green;
 }

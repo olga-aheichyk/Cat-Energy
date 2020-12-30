@@ -6,6 +6,7 @@
 
 .how-it-work__title {
   font-size: 36px;
+  font-weight: 400;
   text-align: left;
   margin-bottom: 41px;
 }
@@ -16,6 +17,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
+    margin-left: 60px;
     grid-template-columns: 230px 230px;
     grid-template-rows: 280px 280px;
     column-gap: 153px;
@@ -23,7 +25,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 230px 230px 230px 230px;
+    grid-template-columns: repeat(4, 230px);
+    margin-left: auto;
+    grid-template-rows: 280px;
     column-gap: 94px;
   }
 }

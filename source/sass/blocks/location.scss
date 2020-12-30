@@ -1,4 +1,11 @@
-//.location {}
+.location {
+  background-color: $basic-grey;
+  position: relative;
+}
+
+.location--index {
+  background-color: $white;
+}
 
 .location__card {
   @include center-wrapper;
@@ -6,15 +13,25 @@
   justify-content: space-between;
   align-items: center;
   min-height: 114px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+    width: 520px;
+    background-color: $white;
+    padding: 40px 50px;
+  }
 }
 
 .location__title {
-  //font-family: $title-font;
   font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
   color: $black;
   text-transform: uppercase;
-  line-height: 18px;
-  max-width: 171px;
+  max-width: 145px;
 }
 
 .location__text {

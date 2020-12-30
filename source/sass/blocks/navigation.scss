@@ -2,7 +2,7 @@
   z-index: 1;
 }
 
-.navigation__toogle {
+.navigation__toggle {
   display: none;
 
   @media (max-width: $mobile-width-only) {
@@ -11,23 +11,28 @@
     height: 30px;
     background-color: $white;
     position: absolute;
-    top: 25px;
+    top: 15px;
     right: 10px;
     z-index: 2;
     border: none;
     cursor: pointer;
+    outline: none;
+
+    &:focus {
+      outline: 1px solid $white;
+    }
   }
 }
 
-.navigation__toogle::after {
+.navigation__toggle::after {
   @media (max-width: $mobile-width-only) {
     width: 24px;
     height: 1.5px;
     background-color: $black;
     content: "";
     position: absolute;
-    top: 23px;
-    right: 23px;
+    top: 5px;
+    right: 3px;
     box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
   }
 }
@@ -45,15 +50,14 @@
 
 .navigation--opened {
   @media (max-width: $mobile-width-only) {
-    & .navigation__toogle {
+    & .navigation__toggle {
       display: block;
       width: 30px;
       height: 30px;
       background-color: $white;
       position: absolute;
-      top: 25px;
+      top: 15px;
       right: 10px;
-      z-index: 2;
       border: none;
       cursor: pointer;
     }
@@ -64,8 +68,8 @@
       background-color: $black;
       content: "";
       position: absolute;
-      top: 31px;
-      right: 22px;
+      top: 15px;
+      right: 5px;
       box-shadow: none;
       transform: rotate(45deg);
     }
@@ -76,8 +80,8 @@
       background-color: $black;
       content: "";
       position: absolute;
-      top: 31px;
-      right: 22px;
+      top: 15px;
+      right: 5px;
       transform: rotate(-45deg);
     }
 
@@ -86,9 +90,6 @@
       width: 320px;
       background-color: $white;
       flex-direction: column;
-      position: absolute;
-      top: 70px;
-      left: 0;
     }
   }
 }
@@ -97,14 +98,17 @@
   color: $black;
   font-size: 20px;
   text-transform: uppercase;
+  text-decoration: none;
+  z-index: 2;
 
   @media (max-width: $mobile-width-only) {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    border-bottom: 1px solid $border-grey;
-    border-top: 1px solid $border-grey;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-collapse: collapse;
     font-weight: 500;
   }
 
@@ -126,6 +130,7 @@
 
   &:hover {
     text-decoration: none;
+    padding-bottom: 10px;
     color: $black;
     border-bottom: none;
     opacity: 60%;

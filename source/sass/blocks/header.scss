@@ -1,12 +1,19 @@
 .header {
   grid-row: 1;
+}
 
+.header__wrapper {
   @include center-wrapper;
   padding-top: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
@@ -17,16 +24,28 @@
   }
 }
 
+
 .header--index::after {
   @media (min-width: $desktop-width) {
     display: block;
-    content: url("../img/index-bg-desktop.png");
+    content: url("../img/index-bg-desktop.jpg");
+    //content: "";
     //background-image: url("../img/index-bg-desktop.png");
     background-color: $basic-green-2;
     position: absolute;
-    right: 0;
+    left: 50%;
     top: 0;
-    //z-index: 0;
+    z-index: 0;
     width: 50vw;
+
+    @media (min-resolution: 2dppx) {
+      //content: url("../img/index-bg-desktop@2x.jpg");
+      //width: 720px;
+      //height: 694px;
+
+      //content: "";
+      //background-image: url("../img/index-bg-desktop@2x.jpg");
+      //background-size: 720px auto;
+    }
   }
 }
