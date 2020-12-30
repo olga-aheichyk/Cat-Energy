@@ -77,6 +77,10 @@
   background-color: $basic-grey-2;
   padding-left: 5px;
   padding-right: 5px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background-color: $white;
+  }
 }
 
 .example__cost {

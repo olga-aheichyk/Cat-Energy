@@ -10,6 +10,13 @@
     width: 202px;
   }
 
+  &--header {
+    @media (max-width: $mobile-width-only) {
+      align-self: flex-start;
+      margin-bottom: 15px;
+    }
+  }
+
   &--footer {
     width: auto;
     padding-top: 25px;

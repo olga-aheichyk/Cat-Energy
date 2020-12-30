@@ -21,6 +21,13 @@
   height: 10px;
   background-color: $white;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    position: relative;
+  }
 }
 
 .range__mark {
@@ -29,4 +36,25 @@
   height: 6px;
   background-color: $basic-green;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 45%;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 34px;
+      height: 34px;
+      border: 1px solid $special-grey;
+      border-radius: 50%;
+      position: absolute;
+      top: -14px;
+      left: -12px;
+    }
+  }
 }

@@ -58,7 +58,6 @@
       position: absolute;
       top: 15px;
       right: 10px;
-      z-index: 2;
       border: none;
       cursor: pointer;
     }
@@ -91,9 +90,6 @@
       width: 320px;
       background-color: $white;
       flex-direction: column;
-      position: absolute;
-      top: 70px;
-      left: 0;
     }
   }
 }
@@ -110,7 +106,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    border: 1px solid $border-grey;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-collapse: collapse;
     font-weight: 500;
   }
 
