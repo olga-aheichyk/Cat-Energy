@@ -14,15 +14,27 @@
   color: $special-dark-grey;
 
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none;
+    color: $basic-green;
+  }
+
+  &:active {
+    color: transparentize($color: $basic-green, $amount: 0.7);
   }
 }
 
 .copyright__logo {
   margin-left: 30px;
+  fill: $special-grey-2;
 
-  &:hover {
-    stroke: $basic-green;
+  &:hover,
+  &:focus {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: transparentize($color: $basic-green, $amount: 0.7);
   }
 }

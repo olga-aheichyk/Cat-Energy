@@ -15,10 +15,44 @@
 }
 
 .social__item {
-  height: 16px;
-  width: 23px;
+  vertical-align: baseline;
 }
 
-.social__icon:hover {
-  stroke: $basic-green;
+.social__icon {
+  fill: $special-grey-2;
+  width: 23px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+
+  &--ig {
+    width: 16px;
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--fb {
+    width: 22px;
+    height: 22px;
+
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 33px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: transparentize($color: $basic-green, $amount: 0.7);
+  }
 }

@@ -5,13 +5,14 @@
 .catalog__title {
   font-size: 36px;
   font-weight: 400;
-  padding-top: 19px;
-  padding-bottom: 29px;
+  padding-top: 27px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 152px;
+    padding-top: 43px;
   }
 }
 
@@ -20,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 324px 324px;
-    gap: 100px 60px;
+    gap: 142px 60px;
   }
 
   @media (min-width: $desktop-width) {

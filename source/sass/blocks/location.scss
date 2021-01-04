@@ -46,7 +46,8 @@
 }
 
 .location__iframe {
-  width: 98%;
+  width: 100%;
+  display: block;
   height: 362px;
 
   @media (min-width: $tablet-width) {
