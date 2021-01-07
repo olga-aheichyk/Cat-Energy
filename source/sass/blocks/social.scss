@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 22px;
+  gap: 24px;
   padding: 17px 20px;
   border-bottom: 1px solid $border-grey;
   border-top: 1px solid $border-grey;
@@ -42,8 +42,8 @@
     height: 22px;
 
     @media (min-width: $tablet-width) {
-      width: 28px;
-      height: 33px;
+      width: 24px;
+      height: 23px;
     }
   }
 

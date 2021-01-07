@@ -14,7 +14,7 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="logo__image" src="img/logo-mobile.svg" width="191" height="37" alt="Логотип Кэт Энерджи">
+              <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
           </picture>
         </a>
 
@@ -47,81 +47,92 @@
         </p>
 
         <form class="form" action="https://echo.htmlacademy.ru/courses">
-          <div class="form__cat-data">
-            <div class="form__row">
-              <label class="form__label" for="cat_name">
-                Имя:<sup>*</sup>
-              </label>
-              <input class="form__input-text" type="text" name="cat-name" id="cat_name" placeholder="Барсик" required>
+          <div class="form__general-data">
+            <div class="form__cat-data">
+              <div class="form__row">
+                <label class="form__label" for="cat_name">
+                  Имя:<sup>*</sup>
+                </label>
+                <input class="form__input-text" type="text" name="cat-name" id="cat_name" placeholder="Барсик" required>
+              </div>
+
+              <div class="form__row">
+                <label class="form__label" for="cat_weight">
+                  Вес (кг):<sup>*</sup>
+                </label>
+                <input class="form__input-text" type="number" name="cat-weight" id="cat_weight" placeholder="7" required>
+              </div>
+
+
+              <div class="form__row">
+                <label class="form__label" for="cat_age">
+                  Возраст (лет):
+                </label>
+                <input class="form__input-text" type="number" name="cat-age" id="cat_age" placeholder="7">
+              </div>
             </div>
 
-            <div class="form__row">
-              <label class="form__label" for="cat_weight">
-                Вес (кг):<sup>*</sup>
+            <div class="form__variants">
+              <input class="form__input-radio" type="radio" name="variant" value="sliming" id="sliming" checked>
+              <label class="form__label" for="sliming">
+                Похудение
               </label>
-              <input class="form__input-text" type="number" name="cat-weight" id="cat_weight" placeholder="7" required>
-            </div>
 
-
-            <div class="form__row">
-              <label class="form__label" for="cat_age">
-                Возраст (лет):
+              <input class="form__input-radio" type="radio" name="variant" value="weight-gain" id="weight_gain">
+              <label class="form__label" for="weight_gain">
+                Набор массы
               </label>
-              <input class="form__input-text" type="number" name="cat-age" id="cat_age" placeholder="7">
+
+              <input class="form__input-radio" type="radio" name="variant" value="need-advice" id="need_advice">
+              <label class="form__label" for="need_advice">
+                Не знаю (Нужен ваш совет)
+              </label>
             </div>
-          </div>
-
-          <div class="form__variants">
-            <input class="form__input-radio" type="radio" name="variant" value="sliming" id="sliming" checked>
-            <label class="form__label" for="sliming">
-              Похудение
-            </label>
-
-            <input class="form__input-radio" type="radio" name="variant" value="weight-gain" id="weight_gain">
-            <label class="form__label" for="weight_gain">
-              Набор массы
-            </label>
-
-            <input class="form__input-radio" type="radio" name="variant" value="need-advice" id="need_advice">
-            <label class="form__label" for="need_advice">
-              Не знаю (Нужен ваш совет)
-            </label>
           </div>
 
           <div class="form__contacts">
             <h3 class="form__title">
-              Контактные данные
-              <span class="form__span">(владельца кота)</span>
+              <span class="form__title-span">
+                Контактные данные
+                <span class="form__span">(владельца кота)</span>
+            </span>
             </h3>
 
-            <div class="form__row">
-              <label class="form__label" for="email">
-                E-mail:<sup>*</sup>
-              </label>
-              <input class="form__input-text form__input-text--email" type="email" name="owner-email" id="email" placeholder="kuklachev@gmail.com" required>
-            </div>
+            <div class="form__contacts-wrapper">
+              <div class="form__row">
+                <label class="form__label" for="email">
+                  E-mail:<sup>*</sup>
+                </label>
+                <input class="form__input-text form__input-text--email" type="email" name="owner-email" id="email" placeholder="kuklachev@gmail.com" required>
+              </div>
 
-            <div class="form__row">
-              <label class="form__label" for="phone">
-                Телефон:<sup>*</sup>
-              </label>
-              <input class="form__input-text form__input-text--phone" type="tel" name="owner-phone" id="phone" placeholder="8 (960) 900-60-90" required>
+              <div class="form__row">
+                <label class="form__label" for="phone">
+                  Телефон:<sup>*</sup>
+                </label>
+                <input class="form__input-text form__input-text--phone" type="tel" name="owner-phone" id="phone" placeholder="8 (960) 900-60-90" required>
+              </div>
             </div>
           </div>
 
           <div class="form__comment">
             <h3 class="form__title">
-              Комментарий
+              <span class="form__title-span form__title-span--comment">
+                Комментарий
+              </span>
             </h3>
             <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
 
           <div class="form__additional">
             <h3 class="form__title">
-              Дополнительно
+              <span class="form__title-span form__title-span--additional">
+                Дополнительно
+              </span>
             </h3>
 
-            <input class="form__input-checkbox" type="checkbox" name="sugar" id="sugar" checked>
+            <div class="form__additional-wrapper">
+              <input class="form__input-checkbox" type="checkbox" name="sugar" id="sugar" checked>
             <label class="form__label" for="sugar">
               Сахарозаменитель
             </label>
@@ -140,6 +151,7 @@
             <label class="form__label" for="vitamins">
               Витамины
             </label>
+            </div>
           </div>
 
           <input class="button" type="submit" value="отправить заявку">

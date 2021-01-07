@@ -1,6 +1,10 @@
 .location {
   background-color: $basic-grey;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+  }
 }
 
 .location--index {
@@ -17,8 +21,8 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 2;
-    top: 20px;
-    left: 20px;
+    top: 25%;
+    left: 7%;
     width: 520px;
     background-color: $white;
     padding: 40px 50px;
@@ -26,12 +30,16 @@
 }
 
 .location__title {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: $black;
   text-transform: uppercase;
   max-width: 145px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .location__text {
@@ -63,5 +71,11 @@
 
   @media (min-width: $tablet-width) {
     width: 113px;
+    top: 24%;
+    left: 43%;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 46%;
   }
 }

@@ -100,67 +100,75 @@
       </section>
 
       <section class="example">
-        <div class="example__wrapper">
+        <div class="example__wrapper-around">
           <div class="example__history">
-            <h2 class="example__title">
-              Живой пример
-            </h2>
-            <p class="example__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-            </p>
-          </div>
-          <div class="example__statistic">
-            <dl class="example__list">
-              <div class="example__card">
-                <dt class="example__number">
-                  5 КГ
-                </dt>
-                <dd class="example__number-description">
-                  снижение веса
-                </dd>
+            <div class="example__wrapper-left">
+              <h2 class="example__title">
+                Живой пример
+              </h2>
+              <p class="example__text">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
+
+              <div class="example__statistic">
+                <dl class="example__list">
+                  <div class="example__card">
+                    <dt class="example__number example__number--kg">
+                      5 КГ
+                    </dt>
+                    <dd class="example__number-description">
+                      снижение
+                      <span class="example__number-span">веса</span>
+                    </dd>
+                  </div>
+
+                  <div class="example__card">
+                    <dt class="example__number example__number--days">
+                      60 ДНЕЙ
+                    </dt>
+                    <dd class="example__number-description">
+                      затрачено
+                      <span class="example__number-span">времени</span>
+                    </dd>
+                  </div>
+                </dl>
+                <p class="example__cost">
+                  Затраты на питание:
+                  <span class="example__cost-span">15 000 РУБ.</span>
+                </p>
               </div>
-
-              <div class="example__card">
-                <dt class="example__number">
-                  60 ДНЕЙ
-                </dt>
-                <dd class="example__number-description">
-                  затрачено времени
-                </dd>
-              </div>
-            </dl>
-            <p class="example__cost">
-              Затраты на питание: 15 000 РУБ.
-            </p>
-          </div>
-        </div>
-
-        <div class="example__photoproove">
-          <div class="example__comparison">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x">
-              <img class="example__photo-before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Фото Бориса до">
-            </picture>
-
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x">
-              <img class="example__photo-after" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Фото Бориса после">
-            </picture>
-          </div>
-
-          <div class="example__range range">
-            <p class="range__text">
-              Было
-            </p>
-            <div class="range__scale">
-              <div class="range__mark"></div>
             </div>
-            <p class="range__text">
-              Стало
-            </p>
           </div>
-        </section>
+
+          <div class="example__photoproove">
+            <div class="example__wrapper-right">
+              <div class="example__comparison">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x">
+                  <img class="example__photo-before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Фото Бориса до">
+                </picture>
+
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x">
+                  <img class="example__photo-after" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Фото Бориса после">
+                </picture>
+              </div>
+
+              <div class="example__range range">
+                <p class="range__text">
+                  Было
+                </p>
+                <div class="range__scale">
+                  <div class="range__mark"></div>
+                </div>
+                <p class="range__text">
+                  Стало
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
     </main>
 
     <footer class="footer">

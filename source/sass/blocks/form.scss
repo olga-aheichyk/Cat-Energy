@@ -2,15 +2,33 @@
   width: 100%;
 }
 
+.form__general-data {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .form__cat-data {
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 47%;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 }
 
 .form__row {
   display: grid;
   grid-template-columns: max-content 1fr;
-  row-gap: 20px;
+  //row-gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    column-gap: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .form__label {
@@ -20,6 +38,10 @@
   font-weight: 400;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .form__input-text {
@@ -32,6 +54,10 @@
   border: 2px solid #e7e7e7;
   margin-left: 10px;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 
   &:hover {
     border: 2px solid $special-grey;
@@ -55,6 +81,10 @@
     background-color: $white;
     color: $special-dark-grey;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -64,6 +94,19 @@
   flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid #e7e7e7;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 47%;
+    //padding-top: 20px;
+    padding-left: 32px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
 
   & .form__label {
     position: relative;
@@ -120,56 +163,93 @@
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
-  //display: flex;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
 
   &::after {
     content: "";
     height: 2px;
     background-color: $basic-green;
-    width: calc((100vw - 280px) / 2);
+    width: 100vw;
     position: absolute;
-    top: 35px;
-    margin-right: calc((280px - 100vw) / 2);
-    right: -40px;
+    top: 45px;
 
     @media (min-width: $tablet-width) {
       content: "";
       height: 2px;
       background-color: $basic-green;
       position: absolute;
-      top: 35px;
+      top: 50px;
+      right: -40px;
       width: 100vw;
-      //margin-right: calc((780px - 100vw) / 2);
-      //right: -40px;
+    }
+  }
+}
+
+.form__title-span {
+  z-index: 2;
+  display: block;
+  padding: 10px 10px 5px 40px;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: -40px;
+  width: 88%;
+
+  @media (min-width: $desktop-width) {
+    width: 48%;
+  }
+
+  &--comment {
+    width: 67%;
+
+    @media (min-width: $tablet-width) {
+      width: 42%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 21%;
     }
   }
 
-  &::before {
+  &--additional {
+    width: 74%;
+
     @media (min-width: $tablet-width) {
-      content: "";
-      height: 2px;
-      background-color: $basic-green;
-      position: absolute;
-      top: 35px;
-      width: calc((100vw - 780px) / 2);
-      margin-left: calc((780px - 100vw) / 2);
-      left: -40px;
+      width: 42%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 24%;
     }
   }
 }
 
 .form__span {
   @media (max-width: $mobile-width-only) {
-    position: absolute;
-    top: 45px;
-    right: 44%;
+    display: block;
+  }
+}
+
+.form__contacts-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -77px;
+
+    & .form__row {
+      width: 47%;
+    }
   }
 }
 
 .form__input-text--email {
   background-image: url("../img/icon-email.svg");
   background-repeat: no-repeat;
-  background-position: 98% 45%;
+  background-position: 96% 45%;
 
   &:required:valid {
     background-image: url("../img/icon-email-disabled.svg");
@@ -231,6 +311,20 @@
   //@media (min-width: $tablet-width) {}
 }
 
+.form__additional-wrapper {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 280px);
+    column-gap: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 221px);
+    column-gap: 104px;
+  }
+}
+
 .form__input-checkbox {
   @include visually-hidden;
 }
@@ -275,9 +369,17 @@
   color: #bababa;
 }
 
-/*.form .button {
+.form .button {
   font-family: $title-font;
   border: none;
-  font-size: 20px;
-  padding: 14px 25px;
-}*/
+  //font-size: 20px;
+  //padding: 14px 25px;
+
+  @media (min-width: $desktop-width) {
+    width: 35%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 47%;
+  }
+}
