@@ -1,10 +1,6 @@
 .location {
   background-color: $basic-grey;
   position: relative;
-
-  @media (min-width: $desktop-width) {
-    margin-top: 30px;
-  }
 }
 
 .location--index {
