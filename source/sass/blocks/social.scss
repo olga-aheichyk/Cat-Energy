@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 22px;
+  gap: 24px;
   padding: 17px 20px;
   border-bottom: 1px solid $border-grey;
   border-top: 1px solid $border-grey;
@@ -15,10 +15,44 @@
 }
 
 .social__item {
-  height: 16px;
-  width: 23px;
+  vertical-align: baseline;
 }
 
-.social__icon:hover {
-  stroke: $basic-green;
+.social__icon {
+  fill: $special-grey-2;
+  width: 23px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+
+  &--ig {
+    width: 16px;
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--fb {
+    width: 22px;
+    height: 22px;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 23px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: transparentize($color: $basic-green, $amount: 0.7);
+  }
 }

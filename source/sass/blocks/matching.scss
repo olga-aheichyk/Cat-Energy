@@ -8,11 +8,28 @@
   color: $black;
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding-top: 50px;
+    padding-bottom: 44px;
+  }
 }
 
 .matching__text {
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32%;
+    margin-bottom: 66px;
+  }
 }
 
 .matching__note {
@@ -20,4 +37,10 @@
   font-size: 16px;
   text-align: center;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    bottom: 57px;
+    left: 129px;
+  }
 }

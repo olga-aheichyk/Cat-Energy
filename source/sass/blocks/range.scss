@@ -1,6 +1,6 @@
 .range {
   padding-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 33px;
   display: flex;
   gap: 15px;
   justify-content: center;
@@ -12,15 +12,18 @@
   color: $black;
   text-transform: uppercase;
   text-align: center;
+  margin-left: 5px;
 }
 
 .range__scale {
   border: 1px solid $special-grey;
-  border-radius: 5px;
-  width: 20%;
-  height: 10px;
+  border-radius: 15px;
+  width: 30%;
+  height: 14px;
   background-color: $white;
-  align-self: center;
+  position: relative;
+  top: 3px;
+  left: 3px;
 
   @media (min-width: $tablet-width) {
     width: 428px;
@@ -32,18 +35,19 @@
 
 .range__mark {
   border-radius: 5px;
-  width: 50%;
+  width: 43%;
   height: 6px;
   background-color: $basic-green;
   align-self: center;
+  margin: 3px 5px;
 
   @media (min-width: $tablet-width) {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 45%;
+    top: -4px;
+    left: 50%;
 
     &::before {
       content: "";
@@ -54,7 +58,7 @@
       border-radius: 50%;
       position: absolute;
       top: -14px;
-      left: -12px;
+      left: -13px;
     }
   }
 }
