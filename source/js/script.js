@@ -1,6 +1,6 @@
-const toggleButton = document.querySelector(".navigation__toggle");
-const navigationMobile = document.querySelector(".navigation");
+var toggleButton = document.querySelector(".navigation__toggle");
+var navigationMobile = document.querySelector(".navigation");
 
-toggleButton.addEventListener ("click", () => {
+toggleButton.addEventListener ("click", function() {
   navigationMobile.classList.toggle("navigation--opened");
 });
