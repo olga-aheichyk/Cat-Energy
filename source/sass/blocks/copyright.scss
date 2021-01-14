@@ -17,7 +17,8 @@
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $basic-green;
+    color: $special-dark-grey;
+    fill: $basic-green;
   }
 
   &:active {
@@ -27,4 +28,10 @@
 
 .copyright__logo {
   margin-left: 22px;
+  width: 27px;
+  fill: $special-dark-grey;
+
+  &:hover {
+    fill: $basic-green;
+  }
 }

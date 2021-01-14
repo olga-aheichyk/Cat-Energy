@@ -1,5 +1,7 @@
 .button {
+  display: block;
   background-color: $basic-green;
+  border: none;
   font-family: $title-font;
   font-size: 14px;
   line-height: 18px;
@@ -8,10 +10,10 @@
   text-decoration: none;
   text-align: center;
   color: $white;
-  padding: 10px 73px;
+  padding: 10px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 26px;
+    padding: 14px 35px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -22,14 +24,10 @@
     background-color: $basic-green-2;
   }
 
+  &:active,
   &:focus {
-    text-decoration: none;
-    color: $black;
-    outline: 1px solid $special-grey;
-  }
-
-  &:active {
     color: transparentize($color: $white, $amount: 0.7);
+    text-decoration: none;
   }
 }
 
@@ -37,7 +35,7 @@
   background-color: $basic-grey;
   color: $special-dark-grey;
   padding: 15px 20px;
-  width: 100%;
+  align-self: stretch;
   font-size: 16px;
 
   &:hover {
