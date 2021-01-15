@@ -64,7 +64,7 @@
     font-size: 20px;
   }
 
-  &::placeholder {
+  &:placeholder-shown {
     font-family: $title-font;
     font-size: 16px;
     background-color: $white;
@@ -82,6 +82,11 @@
 
   &:focus {
     outline: 2px solid $special-dark-grey;
+    outline-offset: -1px;
+  }
+
+  &:required:not(:placeholder-shown) {
+    outline: 2px solid $error-color;
     outline-offset: -1px;
   }
 }
@@ -248,7 +253,7 @@
   &--contacts {
     @media (max-width: $mobile-width-only) {
       display: block;
-      width: 80%;
+      width: 57%;
     }
   }
 }
@@ -281,6 +286,10 @@
     background-image: url("../img/icon-email-focus.svg");
   }
 
+  &:required:invalid:not(:placeholder-shown) {
+    background-image: url("../img/icon-email-invalid.svg");
+  }
+
   &.form__input-text--error {
     background-image: url("../img/icon-email-invalid.svg");
   }
@@ -309,7 +318,7 @@
   border: 1px solid $basic-grey-form;
   resize: none;
 
-  &::placeholder {
+  &:placeholder-shown {
     font-family: $title-font;
     font-size: 16px;
     background-color: $white;
