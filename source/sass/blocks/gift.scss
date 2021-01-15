@@ -3,6 +3,7 @@
   background-image: url("../img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
   height: 289px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -16,7 +17,7 @@
     background-size: 280px auto;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     height: 200px;
     background-image: url("../img/gift-photo-tablet.jpg");
     background-size: 708px auto;

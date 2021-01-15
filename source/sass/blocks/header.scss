@@ -49,6 +49,7 @@
     z-index: 0;
     height: 694px;
     width: 50vw;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-bg-desktop@2x.jpg");

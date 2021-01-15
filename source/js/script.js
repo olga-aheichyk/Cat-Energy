@@ -14,13 +14,10 @@ function initMap() {
           center: coordinates
       });
 
-
-      image = "../img/map-pin-mobile.png",
+      image = "img/map-pin-mobile.png",
       marker = new google.maps.Marker({
         position: coordinates,
         map: map,
         icon: image
     });
 }
-
-initMap();

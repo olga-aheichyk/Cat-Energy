@@ -64,7 +64,7 @@
     font-size: 20px;
   }
 
-  &:placeholder-shown {
+  &::placeholder {
     font-family: $title-font;
     font-size: 16px;
     background-color: $white;
@@ -85,7 +85,7 @@
     outline-offset: -1px;
   }
 
-  &:required:not(:placeholder-shown) {
+  &:invalid:not(:placeholder-shown) {
     outline: 2px solid $error-color;
     outline-offset: -1px;
   }
@@ -286,7 +286,7 @@
     background-image: url("../img/icon-email-focus.svg");
   }
 
-  &:required:invalid:not(:placeholder-shown) {
+  &:invalid:not(:placeholder-shown) {
     background-image: url("../img/icon-email-invalid.svg");
   }
 
@@ -318,7 +318,7 @@
   border: 1px solid $basic-grey-form;
   resize: none;
 
-  &:placeholder-shown {
+  &::placeholder {
     font-family: $title-font;
     font-size: 16px;
     background-color: $white;

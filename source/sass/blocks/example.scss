@@ -256,6 +256,7 @@
 .example__comparison {
   @media (min-width: $tablet-width) {
     min-height: 560px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -274,6 +275,8 @@
     //height: 520px;
     clip: rect(auto, 365px, auto, auto);
     position: absolute;
+    left: 50%;
+    transform: translateX(-52%);
   }
 }
 
@@ -291,7 +294,9 @@
     clip: rect(auto, auto, auto, 260px);
     position: absolute;
     //top: 0;
-    right: 89px;
+    //right: 89px;
+    left: 50%;
+    transform: translateX(-46%);
   }
 
   @media (min-width: $desktop-width) {
