@@ -5,8 +5,8 @@ toggleButton.addEventListener ("click", function() {
   navigationMobile.classList.toggle("navigation--opened");
 });
 
-// 59.938744880956804, 30.32296241647558
 
+/*
 function initMap() {
   var coordinates = {lat: 59.938744880956804, lng: 30.32296241647558},
 
@@ -21,3 +21,4 @@ function initMap() {
         icon: image
     });
 }
+*/
