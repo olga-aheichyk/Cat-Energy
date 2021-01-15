@@ -9,6 +9,11 @@
   padding-top: 25px;
   padding-bottom: 25px;
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     padding-top: 50px;
@@ -19,6 +24,11 @@
 .matching__text {
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

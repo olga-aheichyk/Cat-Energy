@@ -2,8 +2,9 @@
   padding-bottom: 20px;
   margin-top: 33px;
   display: flex;
-  gap: 15px;
-  justify-content: center;
+  //gap: 15px;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 .range__text {
@@ -13,6 +14,20 @@
   text-transform: uppercase;
   text-align: center;
   margin-left: 5px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted rgba($black, 0.4);
+
+    &:hover {
+      border-bottom: 1px solid rgba($black, 0.4);
+    }
+
+    &:active,
+    &:focus {
+      border: none;
+    }
+  }
 }
 
 .range__scale {
@@ -21,9 +36,9 @@
   width: 30%;
   height: 14px;
   background-color: $white;
-  position: relative;
-  top: 3px;
-  left: 3px;
+  //position: relative;
+  //top: 3px;
+  //left: 3px;
 
   @media (min-width: $tablet-width) {
     width: 428px;
@@ -40,25 +55,38 @@
   background-color: $basic-green;
   align-self: center;
   margin: 3px 5px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 8px;
-    height: 8px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
+    border: 1px solid $special-grey;
+    background-color: $white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
     position: absolute;
-    top: -4px;
-    left: 50%;
+    top: -17px;
+    left: 48%;
 
-    &::before {
+    &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      border: 1px solid $basic-green;
+    }
+
+    &::after {
       content: "";
       display: block;
-      width: 34px;
-      height: 34px;
-      border: 1px solid $special-grey;
+      width: 8px;
+      height: 8px;
+      background-color: $basic-green;
       border-radius: 50%;
       position: absolute;
-      top: -14px;
-      left: -13px;
+      top: 12px;
+      left: 12px;
     }
   }
 }

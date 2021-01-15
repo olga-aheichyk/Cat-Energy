@@ -13,6 +13,7 @@
   font-weight: 400;
   padding-top: 27px;
   padding-bottom: 25px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -25,6 +26,40 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
     grid-row: 1;
+  }
+
+  &::after {
+    content: "";
+    height: 2px;
+    background-color: $basic-green;
+    width: 100vw;
+    position: absolute;
+    top: 40px;
+    left: calc((280px - 100vw) / 2);
+
+    @media (min-width: $tablet-width) {
+      left: calc((708px - 100vw) / 2);
+      top: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: calc((1220px - 100vw) / 2);
+    }
+  }
+}
+
+.additional__title-span {
+  z-index: 2;
+  background-color: $white;
+  position: relative;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: -30px;
   }
 }
 

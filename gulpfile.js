@@ -99,7 +99,7 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
-// Copy files to the folder dist
+// Copy files to the folder build
 
 const copy = (done) => {
   return gulp.src([

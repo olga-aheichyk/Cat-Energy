@@ -1,13 +1,15 @@
 .intro {
-  background-color: $basic-green-2;
-  height: 302px;
+  background-color: rgba($basic-green, 0.85);
+  min-height: 302px;
   color: $white;
   text-align: center;
-  background-image: url("../img/index-bg-mobile.jpg");
+  background-image: url("../img/index-bg-mobile.jpg"),
+    linear-gradient(to bottom, rgba($basic-green, 0.85) 67%, $white 67% 100%);
   background-repeat: no-repeat;
   background-position: center top;
 
   @media (min-resolution: 2dppx) {
+    background-color: $white;
     background-image: url("../img/index-bg-mobile@2x.jpg");
     background-size: 320px auto;
   }
@@ -45,7 +47,6 @@
   font-weight: 400;
   padding-top: 22px;
   padding-bottom: 10px;
-  position: relative;
   margin-top: 0;
 
   @media (min-width: $tablet-width) {
@@ -59,15 +60,31 @@
   }
 }
 
-.intro__title::after {
+.intro__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 277px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.intro__text::after {
   @media (max-width: $mobile-width-only) {
-    display: block;
+    //display: block;
     content: "";
     height: 270px;
     width: 280px;
     background-image: url("../img/index-can-mobile.png");
     position: absolute;
-    top: 148px;
+    top: 25px;
     left: 0;
 
     @media (min-resolution: 2dppx) {
@@ -82,7 +99,7 @@
     height: 499px;
     background-image: url("../img/index-can-desktop.png");
     position: absolute;
-    top: -75px;
+    top: -150px;
     left: 367px;
 
     @media (min-resolution: 2dppx) {
@@ -92,17 +109,12 @@
   }
 }
 
-.intro__text {
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 277px;
-
+.intro .button {
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    margin-bottom: 40px;
+    width: 40%;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+  @media (min-width: $desktop-width) {
+    width: 25%;
   }
 }

@@ -47,6 +47,15 @@
 
 .location__map {
   position: relative;
+  background-color: $basic-grey;
+  height: 362px;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .location__iframe {
@@ -59,6 +68,7 @@
   }
 }
 
+/*
 .location__here {
   position: absolute;
   top: 38%;
@@ -75,3 +85,4 @@
     left: 46%;
   }
 }
+*/
