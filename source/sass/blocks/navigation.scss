@@ -12,7 +12,7 @@
     background-color: $white;
     position: absolute;
     top: 15px;
-    right: 45px;
+    right: 20px;
     z-index: 2;
     border: none;
     cursor: pointer;
@@ -35,8 +35,8 @@
     background-color: $black;
     content: "";
     position: absolute;
-    top: 5px;
-    right: 3px;
+    top: 9px;
+    right: 0;
     box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
   }
 }
