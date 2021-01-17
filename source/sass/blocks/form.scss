@@ -499,11 +499,6 @@
   }
 }
 
-.form .button {
-  display: inline-block;
-  padding: 15px 65px;
-}
-
 /*
 .form__input-radio:focus + .form__label::before,
 .form__input-checkbox:focus + .form__label::before {
@@ -525,14 +520,14 @@
 }
 
 .form .button {
-  width: 100%;
   letter-spacing: 1px;
 
   @media (min-width: $desktop-width) {
-    width: 35%;
+    display: inline-block;
+    padding: 15px 65px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 47%;
+    padding: 15px 75px;
   }
 }
