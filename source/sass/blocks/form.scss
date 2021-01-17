@@ -429,6 +429,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 46px;
+    margin-bottom: 17px;
   }
 }
 
@@ -522,9 +523,10 @@
 .form .button {
   letter-spacing: 1px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: inline-block;
     padding: 15px 65px;
+    letter-spacing: 0;
   }
 
   @media (min-width: $desktop-width) {

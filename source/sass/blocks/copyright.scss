@@ -1,6 +1,11 @@
 .copyright {
   padding-top: 7px;
   //padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+    padding-right: 3px;
+  }
 }
 
 .copyright__link {
