@@ -1,5 +1,10 @@
 .navigation {
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 2px;
+    margin-top: -1px;
+  }
 }
 
 .navigation__toggle {
@@ -61,7 +66,7 @@
       background-color: $white;
       position: absolute;
       top: 15px;
-      right: 45px;
+      right: 20px;
       border: none;
       cursor: pointer;
     }

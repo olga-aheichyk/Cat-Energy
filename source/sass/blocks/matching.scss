@@ -1,6 +1,7 @@
 .matching {
   @include center-wrapper;
   padding-bottom: 31px;
+
 }
 
 .matching__title {
@@ -13,7 +14,7 @@
   //padding-bottom: 25px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-    padding-left: 30px;
+    padding-left: 39px;
     padding-right: 30px;
   }
 
@@ -32,8 +33,9 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-    padding-left: 30px;
+    padding-left: 39px;
     padding-right: 30px;
+    margin-top: 46px;
   }
 
   @media (min-width: $tablet-width) {

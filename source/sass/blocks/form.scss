@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 43px;
   }
 }
 
@@ -32,9 +33,10 @@
   column-gap: 6px;
   margin-bottom: 3px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     column-gap: 10px;
     padding-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -64,6 +66,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    margin-bottom: 0;
   }
 
   &::placeholder {
@@ -87,7 +90,7 @@
     outline-offset: -1px;
   }
 
-  &:invalid:not(:placeholder-shown) {
+  &:invalid:not(:focus):not(:placeholder-shown) {
     outline: 2px solid $error-color;
     outline-offset: -1px;
   }
@@ -308,7 +311,7 @@
     background-image: url("../img/icon-email-focus.svg");
   }
 
-  &:invalid:not(:placeholder-shown) {
+  &:invalid:not(:focus):not(:placeholder-shown) {
     background-image: url("../img/icon-email-invalid.svg");
   }
 
@@ -370,7 +373,7 @@
   flex-wrap: wrap;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 7px;
+  margin-top: 9px;
   margin-bottom: 20px;
 
   & .form__label {
