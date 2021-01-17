@@ -31,7 +31,7 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   column-gap: 6px;
-  margin-bottom: 3px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     column-gap: 10px;
@@ -62,11 +62,10 @@
   padding: 10px 15px;
   border: 1px solid $basic-grey-form;
   margin-left: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-bottom: 0;
   }
 
   &::placeholder {
