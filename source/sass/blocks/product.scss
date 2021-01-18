@@ -3,8 +3,9 @@
   grid-template-columns: 141px 142px;
   grid-template-rows: 53px auto auto;
   //row-gap: 15px;
-  padding: 12px 0 37px;
+  //padding: 12px 0 29px;
   position: relative;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -40,7 +41,7 @@
   width: 68px;
   height: auto;
   position: absolute;
-  top: 24px;
+  top: 13px;
   left: 36px;
 
   @media (min-width: $tablet-width) {
@@ -131,6 +132,8 @@
   grid-template-columns: auto auto;
   grid-template-rows: 16px 16px 16px;
   margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     //min-width: 252px;
@@ -172,6 +175,8 @@
 .product .button {
   grid-row: -1;
   grid-column: 1 / -1;
+  margin-left: 0;
+  margin-right: 3px;
 
 
   @media (min-width: $tablet-width) {
