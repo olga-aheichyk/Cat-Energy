@@ -11,8 +11,8 @@
 .additional__title {
   font-size: 24px;
   font-weight: 400;
-  padding-top: 27px;
-  padding-bottom: 25px;
+  margin-top: 23px;
+  margin-bottom: 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -34,7 +34,7 @@
     background-color: $basic-green;
     width: 100vw;
     position: absolute;
-    top: 40px;
+    top: 19px;
     left: calc((280px - 100vw) / 2);
 
     @media (min-width: $tablet-width) {
@@ -64,6 +64,8 @@
 }
 
 .additional__list {
+  margin-top: 35px;
+
   @media (min-width: $desktop-width) {
     grid-column: 1;
     grid-row: 2;
