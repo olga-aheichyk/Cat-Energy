@@ -557,7 +557,8 @@
 
 .form .button {
   letter-spacing: 1px;
-  width: 100%;
+  display: block;
+  //width: 100%;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
