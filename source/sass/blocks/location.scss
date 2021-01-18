@@ -25,9 +25,10 @@
     z-index: 2;
     top: 25%;
     left: 7%;
-    width: 520px;
+    //width: 520px;
     background-color: $white;
-    padding: 40px 50px;
+    padding: 41px 84px 45px 80px;
+    min-width: 573px;
   }
 }
 
@@ -61,6 +62,11 @@
     font-size: 16px;
     line-height: 20px;
     margin-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-top: 17px;
   }
 }
 

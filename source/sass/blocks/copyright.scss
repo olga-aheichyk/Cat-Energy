@@ -7,6 +7,10 @@
     align-self: baseline;
     padding-top: 39px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 44px;
+  }
 }
 
 .copyright__link {

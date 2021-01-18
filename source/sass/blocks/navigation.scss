@@ -5,6 +5,11 @@
     margin-right: 2px;
     margin-top: -1px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: -2px;
+    margin-top: -3px;
+  }
 }
 
 .navigation__toggle {

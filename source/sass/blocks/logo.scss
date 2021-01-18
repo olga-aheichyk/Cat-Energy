@@ -32,6 +32,10 @@
       margin-right: 0;
       padding-top: 25px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 33px;
+    }
   }
 
   &:hover,

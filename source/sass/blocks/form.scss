@@ -14,6 +14,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-left: 2px;
   }
 }
 
@@ -37,6 +38,10 @@
   @media (min-width: $tablet-width) {
     column-gap: 10px;
     margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 9px;
   }
 }
 
@@ -116,10 +121,10 @@
 
   @media (min-width: $desktop-width) {
     width: 44%;
-    //padding-top: 20px;
     padding-left: 32px;
     padding-bottom: 0;
     margin-bottom: 20px;
+    margin-top: 2px;
   }
 
   & .form__label {
@@ -131,6 +136,10 @@
     @media (min-width: $tablet-width) {
       margin-left: 87px;
       margin-bottom: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 57px;
     }
   }
 }
@@ -181,7 +190,7 @@
     width: 36px;
     height: 36px;
     top: -6px;
-    left: -58px;
+    left: -60px;
   }
 }
 
@@ -200,7 +209,7 @@
     width: 16px;
     height: 16px;
     top: 5px;
-    left: -47px;
+    left: -49px;
   }
 }
 
@@ -218,6 +227,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 42px;
   }
 }
 
@@ -264,9 +277,9 @@
   margin-left: -20px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-left: -30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: -40px;
   }
 
   &--contacts {
@@ -297,6 +310,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 3px;
   }
 
   & .form__row {
@@ -339,6 +353,11 @@
     background-position: 97% 50%;
   }
 
+  @media (min-width: $desktop-width) {
+    background-position: 96% 48%;
+    margin-right: 2px;
+  }
+
   &:focus:valid {
     background-image: url("../img/icon-email-focus.svg");
   }
@@ -363,6 +382,11 @@
     margin-left: 5px;
   }
 
+  @media (min-width: $desktop-width) {
+    background-position: 97% 46%;
+    margin-left: 7px;
+  }
+
   &:focus:valid {
     background-image: url("../img/icon-phone-focus.svg");
   }
@@ -374,6 +398,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 46px;
   }
 }
 
@@ -431,6 +459,11 @@
     margin-top: 46px;
     margin-bottom: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 48px;
+    margin-bottom: 23px;
+  }
 }
 
 .form__additional-wrapper {
@@ -447,6 +480,8 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 221px);
     column-gap: 104px;
+    margin-top: 48px;
+    margin-left: 2px;
   }
 
   & .form__label {
@@ -531,6 +566,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 75px;
+    display: inline-block;
+    padding: 15px 209px;
   }
 }
