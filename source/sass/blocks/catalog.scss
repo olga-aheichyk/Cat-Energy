@@ -21,8 +21,9 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 324px 324px;
-    gap: 142px 60px;
+    gap: 96px 60px;
     margin-top: 162px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
