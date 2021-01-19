@@ -13,6 +13,8 @@
   justify-content: space-between;
   align-items: center;
   min-height: 114px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
@@ -33,14 +35,14 @@
 }
 
 .location__title {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
-  letter-spacing: 1px;
+  //letter-spacing: 1px;
   font-weight: 400;
   color: $black;
   text-transform: uppercase;
   width: 140px;
-  margin-top: 14px;
+  //margin-top: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -55,7 +57,7 @@
   font-size: 14px;
   line-height: 20px;
   width: 138px;
-  margin-top: 16px;
+  margin-top: 18px;
 
   @media (min-width: $tablet-width) {
     text-align: right;
