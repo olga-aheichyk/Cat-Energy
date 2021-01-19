@@ -11,8 +11,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 152px;
-    padding-top: 43px;
+    margin-top: 62px;
   }
 }
 
@@ -23,6 +22,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 324px 324px;
     gap: 142px 60px;
+    margin-top: 162px;
   }
 
   @media (min-width: $desktop-width) {
