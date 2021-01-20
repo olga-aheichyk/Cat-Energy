@@ -43,7 +43,7 @@
   @include center-wrapper;
 
   @media (min-width: $tablet-width) {
-    padding-left: 116px;
+    padding-left: 118px;
   }
 }
 
@@ -130,6 +130,7 @@
     line-height: 20px;
     display: inline-block;
     padding: 16px 23px;
+    margin-left: -3px;
   }
 
   @media (min-width: $desktop-width) {

@@ -18,7 +18,7 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 51px 58px 53px;
+    padding: 35px 276px 58px 53px;
     text-align: left;
     margin-bottom: 30px;
   }
@@ -58,7 +58,7 @@
   @media (min-width: $tablet-width) {
     background-size: 268px;
     background-position: 411px 91px;
-    //text-align: left;
+    padding-right: 311px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,6 +82,7 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     font-size: 36px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,9 +101,12 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    width: 60%;
+    //width: 60%;
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 0;
+    margin-top: 19px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,6 +126,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 0;
+    margin-top: 50px;
   }
 
   &::after {
@@ -133,6 +139,10 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     margin-left: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
   }
 
   &:hover {

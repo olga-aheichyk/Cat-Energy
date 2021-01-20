@@ -25,9 +25,10 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 230px);
-    grid-template-rows: 280px 280px;
-    column-gap: 153px;
-    row-gap: 35px;
+    grid-template-rows: repeat(2, 280px);
+    column-gap: 154px;
+    row-gap: 38px;
+    margin-top: 63px;
   }
 
   @media (min-width: $desktop-width) {
