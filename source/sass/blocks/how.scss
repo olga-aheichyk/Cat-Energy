@@ -1,14 +1,15 @@
 .how-it-work {
   @include center-wrapper;
-  margin-top: 26px;
-  margin-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .how-it-work__title {
   font-size: 36px;
   font-weight: 400;
   text-align: left;
-  margin-bottom: 41px;
+  margin-bottom: 0;
+  margin-top: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -19,6 +20,7 @@
 .how-it-work__list {
   list-style-type: none;
   padding-left: 0;
+  margin-top: 36px;
 
   @media (min-width: $tablet-width) {
     display: grid;

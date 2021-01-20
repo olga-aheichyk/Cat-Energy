@@ -26,7 +26,7 @@
     position: absolute;
     z-index: 2;
     top: 25%;
-    left: 210px;
+    left: calc(50% - 610px);
     //width: 520px;
     background-color: $white;
     padding: 41px 87px 45px 76px;

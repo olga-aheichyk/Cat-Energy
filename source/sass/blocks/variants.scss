@@ -1,6 +1,6 @@
 .variants {
   @include center-wrapper;
-  margin-top: 70px;
+  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;
@@ -14,9 +14,8 @@
 
 .variants__item {
   background-color: $basic-grey;
-  padding: 20px;
-  padding-top: 12px;
-  margin-bottom: 21px;
+  padding: 8px 20px 16px 20px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     padding: 50px;
@@ -77,7 +76,7 @@
   text-transform: uppercase;
   text-align: right;
   margin-right: 20px;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -112,7 +111,7 @@
 
 .variants__link {
   display: block;
-  padding-top: 8px;
+  padding-top: 5px;
   font-size: 16px;
   color: $black;
   text-transform: uppercase;
@@ -127,7 +126,7 @@
     background-image: url("../img/arrow-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    margin-left: 20px;
+    margin-left: 15px;
   }
 
   &:hover {
