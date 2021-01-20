@@ -3,7 +3,7 @@
   margin-top: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 20px;
+    margin-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,8 +18,9 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px;
+    padding: 55px 51px 58px 53px;
     text-align: left;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,7 +36,7 @@
 
   @media (min-width: $tablet-width) {
     background-size: 200px;
-    background-position: 417px 20px;
+    background-position: 446px 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,7 +57,7 @@
 
   @media (min-width: $tablet-width) {
     background-size: 268px;
-    background-position: 354px 40px;
+    background-position: 411px 91px;
     //text-align: left;
   }
 
@@ -117,6 +118,11 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &::after {
     content: "";

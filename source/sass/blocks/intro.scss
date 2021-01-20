@@ -21,9 +21,9 @@
     min-height: 850px;
     background-image: url("../img/index-can-tablet.png");
     background-color: $white;
-    background-position: center 261px;
-    padding-top: 33px;
-    padding-left: 88px;
+    background-position: center 263px;
+    //padding-top: 33px;
+    //padding-left: 88px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-can-tablet@2x.png");
@@ -41,6 +41,10 @@
 
 .intro__wrapper {
   @include center-wrapper;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 116px;
+  }
 }
 
 .intro__title {
@@ -55,8 +59,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 62px;
+    line-height: 60px;
     width: 88%;
+    padding-top: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,7 +78,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-bottom: 40px;
+    line-height: 20px;
+    margin-top: 41px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,7 +126,10 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    width: 40%;
+    font-size: 20px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 16px 23px;
   }
 
   @media (min-width: $desktop-width) {
