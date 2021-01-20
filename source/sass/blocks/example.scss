@@ -202,7 +202,7 @@
   text-align: center;
   flex-grow: 1;
   margin-top: 20px;
-  margin-bottom: 43px;
+  margin-bottom: 47px;
 
   @media (min-width: $tablet-width) {
     text-align: right;
@@ -271,9 +271,11 @@
   }
 }
 
+//.example__before-wrapper {}
+
 .example__photo-before {
-  width: 311px;
-  height: 232px;
+  //width: 311px;
+  //height: 232px;
 
   @media (min-width: $tablet-width) {
     width: 677px;
@@ -285,6 +287,8 @@
     transform: translateX(-52%);
   }
 }
+
+//.example__after-wrapper {}
 
 .example__photo-after {
   width: 251px;

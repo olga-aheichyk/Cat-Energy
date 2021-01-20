@@ -104,21 +104,16 @@
   }
 }
 
-/*
+
 .location__here {
   position: absolute;
-  top: 38%;
-  left: 40%;
+  top: calc(50% - 52px);
+  left: calc(50% - 27px);
   width: 57px;
 
   @media (min-width: $tablet-width) {
     width: 113px;
-    top: 24%;
-    left: 43%;
-  }
-
-  @media (min-width: $tablet-width) {
-    left: 46%;
+    top: calc(50% - 97px);
+    left: calc(50% - 54px);
   }
 }
-*/
