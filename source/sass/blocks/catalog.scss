@@ -24,14 +24,14 @@
   margin-top: 55px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 324px 324px;
+    grid-template-columns: repeat(2, 324px);
     gap: 95px 60px;
     margin-top: 162px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
   }
 }

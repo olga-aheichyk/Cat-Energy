@@ -66,6 +66,8 @@
   text-transform: uppercase;
   padding: 10px 15px;
   border: 1px solid $basic-grey-form;
+  cursor: pointer;
+
   margin-left: 10px;
   margin-bottom: 0;
 
@@ -83,6 +85,10 @@
     @media (min-width: $tablet-width) {
       font-size: 20px;
     }
+  }
+
+  &::-webkit-input-placeholder {
+    color: $special-dark-grey;
   }
 
   &:hover {
@@ -132,6 +138,7 @@
     margin-left: 45px;
     margin-bottom: 22px;
     padding-top: 0;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       margin-left: 87px;
@@ -185,6 +192,7 @@
   position: absolute;
   top: -5px;
   left: -46px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 36px;
@@ -223,7 +231,6 @@
   flex-wrap: wrap;
   margin-top: 19px;
   margin-bottom: 0;
-  //align-items: flex-start;
 
   @media (min-width: $tablet-width) {
     margin-top: 69px;
@@ -238,10 +245,9 @@
   font-weight: 400;
   font-size: 24px;
   color: $black;
-  //padding-top: 20px;
-  //padding-bottom: 20px;
   margin-top: 0;
   margin-bottom: 0;
+  pointer-events: none;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -362,7 +368,7 @@
     background-image: url("../img/icon-email-focus.svg");
   }
 
-  &:invalid:not(:focus):not(:placeholder-shown) {
+  &:invalid:not(:placeholder-shown) {
     background-image: url("../img/icon-email-invalid.svg");
   }
 
@@ -416,6 +422,7 @@
   text-transform: uppercase;
   padding: 5px 13px;
   border: 1px solid $basic-grey-form;
+  cursor: pointer;
   resize: none;
   margin-top: 35px;
 
@@ -443,6 +450,7 @@
 
   &:focus {
     outline: 2px solid $special-dark-grey;
+    outline-offset: -1px;
   }
 }
 
@@ -489,6 +497,7 @@
     margin-left: 45px;
     margin-bottom: 10px;
     position: relative;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       margin-left: 58px;
@@ -511,6 +520,7 @@
   position: absolute;
   top: 7px;
   left: -45px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 36px;
@@ -518,6 +528,10 @@
     top: 5px;
     left: -57px;
   }
+}
+
+.form__input-checkbox:disabled + .form__label {
+  opacity: 0.3;
 }
 
 .form__input-checkbox:checked + .form__label::after {
@@ -535,13 +549,6 @@
   }
 }
 
-/*
-.form__input-radio:focus + .form__label::before,
-.form__input-checkbox:focus + .form__label::before {
-  outline: 1px solid $special-dark-grey;
-}
-*/
-
 .form__input-radio:hover + .form__label::before,
 .form__input-checkbox:hover + .form__label::before {
   border: 1px solid $grey-hover;
@@ -550,7 +557,9 @@
 .form__input-radio:active + .form__label::before,
 .form__input-checkbox:active + .form__label::before,
 .form__input-radio:active + .form__label,
-.form__input-checkbox:active + .form__label {
+.form__input-checkbox:active + .form__label,
+.form__input-radio:focus + .form__label::before,
+.form__input-checkbox:focus + .form__label::before {
   border-color: $grey-hover;
   color: $grey-hover;
 }
@@ -558,7 +567,6 @@
 .form .button {
   letter-spacing: 1px;
   display: block;
-  //width: 100%;
 
   @media (min-width: $tablet-width) {
     display: inline-block;

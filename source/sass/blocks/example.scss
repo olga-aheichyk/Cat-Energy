@@ -1,12 +1,7 @@
 .example {
-  //margin-top: 20px;
-
   @media (min-width: $desktop-width) {
     background-color: $basic-grey-2;
-    background-image: linear-gradient(to bottom, $white 30%, $basic-grey-2 30% 100%);
-    //margin-top: 150px;
-    //min-height: 395px;
-    //padding-bottom: 40px;
+    background-image: linear-gradient(to bottom, $white 26%, $basic-grey-2 26% 100%);
   }
 }
 
@@ -28,12 +23,11 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    //margin-bottom: 200px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $basic-grey-2;
-    background-image: linear-gradient(to bottom, $white 30%, $basic-grey-2 30% 100%);
+    background-image: linear-gradient(to bottom, $white 26%, $basic-grey-2 26% 100%);
     grid-column: 1;
     display: flex;
     flex-direction: column;
@@ -94,10 +88,8 @@
 }
 
 .example__statistic {
-  //padding-top: 20px;
   display: flex;
   flex-direction: column;
-  //justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 10px;
   margin-bottom: 0;
@@ -106,6 +98,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-right: 4px;
+    margin-top: 11px;
   }
 }
 
@@ -121,12 +114,11 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 42px;
   }
 }
 
 .example__card {
-  //position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,7 +132,6 @@
   text-align: center;
   border: 1px solid $special-grey;
   border-radius: 3px;
-  //position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -170,15 +161,11 @@
   font-size: 12px;
   line-height: 1;
   text-align: center;
-  //position: absolute;
-  //left: 50%;
-  //bottom: -5px;
   background-color: $basic-grey-2;
   padding-left: 5px;
   padding-right: 5px;
   margin-left: -1px;
   margin-top: -9px;
-  //transform: translateX(50%);
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     background-color: $white;
@@ -186,8 +173,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
-    //padding-left: 0;
-    //padding-right: 0;
   }
 }
 
@@ -200,8 +185,6 @@
 }
 
 .example__cost {
-  //padding-top: 15px;
-  //padding-bottom: 40px;
   font-family: $title-font;
   color: $black;
   text-transform: uppercase;
@@ -214,7 +197,6 @@
     text-align: right;
     font-size: 20px;
     flex-grow: 0;
-    //padding-top: 10px;
     margin-top: 23px;
     margin-bottom: 0;
   }
@@ -243,29 +225,23 @@
   grid-column: 2;
 
   @media (min-width: $tablet-width) {
-    //min-height: 462px;
     background-image: linear-gradient(to bottom, $white 27%, $basic-grey-2 27% 100%);
     margin-top: 79px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, $white 30%, $basic-grey-2 30% 100%);
+    background-image: linear-gradient(to bottom, $white 26%, $basic-grey-2 26% 100%);
+    margin-top: 0;
   }
 }
 
 .example__wrapper-right {
   @include center-wrapper;
 
-  @media (min-width: $tablet-width) {
-    //position: relative;
-    //top: -180px;
-  }
-
   @media (min-width: $desktop-width) {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
-    //top: -163px;
   }
 }
 
@@ -281,24 +257,22 @@
   }
 }
 
-//.example__before-wrapper {}
-
 .example__photo-before {
-  //width: 311px;
-  //height: 232px;
-
   @media (min-width: $tablet-width) {
     width: 677px;
     height: auto;
-    //height: 520px;
     clip: rect(auto, 365px, auto, auto);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
-}
 
-//.example__after-wrapper {}
+  @media (min-width: $desktop-width) {
+    clip: rect(auto, 363px, auto, auto);
+    top: -26px;
+    transform: translateX(-51%);
+  }
+}
 
 .example__photo-after {
   width: 251px;
@@ -313,13 +287,13 @@
     height: auto;
     clip: rect(auto, auto, auto, 249px);
     position: absolute;
-    //top: 0;
-    //right: 89px;
     left: 50%;
     transform: translateX(-46%);
   }
 
   @media (min-width: $desktop-width) {
-    right: 40px;
+    clip: rect(auto, 274px, auto, auto);
+    top: -28px;
+    transform: translateX(-47%);
   }
 }

@@ -51,7 +51,7 @@
   margin-right: auto;
   margin-bottom: 43px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     margin-right: 124px;
     text-align: left;
     margin-bottom: 17px;

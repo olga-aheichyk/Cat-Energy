@@ -108,6 +108,21 @@
   }
 }
 
+.navigation--no-js {
+  @media (max-width: $mobile-width-only) {
+    & .navigation__toggle {
+      display: none;
+    }
+
+    & .navigation__list {
+      display: flex;
+      width: 320px;
+      background-color: $white;
+      flex-direction: column;
+    }
+  }
+}
+
 .navigation__item {
   color: $black;
   font-size: 20px;

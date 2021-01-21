@@ -13,6 +13,11 @@
     padding-bottom: 68px;
     margin-top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 79px;
+    margin-top: 7px;
+  }
 }
 
 .range__text {
@@ -80,6 +85,10 @@
     top: -17px;
     left: 45%;
 
+    @media (min-width: $desktop-width) {
+      left: 44%;
+    }
+
     &:hover {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
     }
@@ -97,8 +106,8 @@
       background-color: $basic-green;
       border-radius: 50%;
       position: absolute;
-      top: 12px;
-      left: 12px;
+      top: 13px;
+      left: 13px;
     }
   }
 }
