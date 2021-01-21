@@ -7,6 +7,11 @@
   //justify-content: space-around;
   align-items: baseline;
   margin-left: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 65px;
+    padding-bottom: 68px;
+  }
 }
 
 .range__text {
@@ -20,6 +25,8 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px dotted rgba($black, 0.4);
+    font-size: 20px;
+    line-height: 30px;
 
     &:hover {
       border-bottom: 1px solid rgba($black, 0.4);
@@ -46,6 +53,7 @@
     height: 6px;
     background-color: #dcdcdc;
     position: relative;
+    margin-left: 28px;
   }
 }
 
@@ -67,7 +75,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
     position: absolute;
     top: -17px;
-    left: 48%;
+    left: 45%;
 
     &:hover {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);

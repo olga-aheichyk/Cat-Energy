@@ -2,6 +2,18 @@
   @include center-wrapper;
   margin-top: 0;
   margin-bottom: 0;
+
+  &::after {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background-color: #e6e6e6;
+      display: block;
+      margin-left: calc((100vw - 708px) / -2);
+      position: absolute;
+    }
+  }
 }
 
 .how-it-work__title {
@@ -24,11 +36,12 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 230px);
+    grid-template-columns: 230px 250px;
     grid-template-rows: repeat(2, 280px);
-    column-gap: 154px;
-    row-gap: 38px;
+    column-gap: 152px;
+    row-gap: 37px;
     margin-top: 63px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,8 +78,8 @@
       font-family: $title-font;
       color: $basic-grey;
       position: absolute;
-      top: 93px;
-      right: 3px;
+      top: 85px;
+      right: 2px;
       z-index: -1;
     }
   }
@@ -88,6 +101,7 @@
   &--powder::after {
     @media (min-width: $tablet-width) {
       content: "2";
+      //right: -13px;
     }
   }
 
@@ -98,6 +112,7 @@
   &--meal::after {
     @media (min-width: $tablet-width) {
       content: "3";
+      right: -15px;
     }
   }
 
@@ -108,6 +123,7 @@
   &--time::after {
     @media (min-width: $tablet-width) {
       content: "4";
+      right: -20px;
     }
   }
 }
