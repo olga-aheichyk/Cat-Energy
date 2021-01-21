@@ -1,26 +1,9 @@
+var navigationNoJS = document.querySelector(".navigation--no-js");
 var toggleButton = document.querySelector(".navigation__toggle");
 var navigationMobile = document.querySelector(".navigation");
+
+navigationNoJS.classList.remove("navigation--no-js");
 
 toggleButton.addEventListener ("click", function() {
   navigationMobile.classList.toggle("navigation--opened");
 });
-
-// 59.938744880956804, 30.32296241647558
-
-function initMap() {
-  var coordinates = {lat: 59.938744880956804, lng: 30.32296241647558},
-
-      map = new google.maps.Map(document.querySelector(".location__map"), {
-          center: coordinates
-      });
-
-
-      image = "../img/map-pin-mobile.png",
-      marker = new google.maps.Marker({
-        position: coordinates,
-        map: map,
-        icon: image
-    });
-}
-
-initMap();

@@ -1,12 +1,13 @@
 .variants {
   @include center-wrapper;
-  margin-top: 70px;
+  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 20px;
+    margin-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 84px;
     display: flex;
     //justify-content: space-between;
   }
@@ -14,18 +15,38 @@
 
 .variants__item {
   background-color: $basic-grey;
-  padding: 20px;
-  padding-top: 12px;
-  margin-bottom: 21px;
+  padding: 8px 20px 16px 20px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px;
+    padding: 35px 276px 58px 53px;
     text-align: left;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
-    margin-right: 40px;
+    min-width: 570px;
+    box-sizing: border-box;
+    padding: 32px 23px 60px 52px;
+    margin-right: 80px;
+  }
+}
+
+.variants__title {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
   }
 }
 
@@ -36,12 +57,12 @@
 
   @media (min-width: $tablet-width) {
     background-size: 200px;
-    background-position: 417px 20px;
+    background-position: 446px 80px;
   }
 
   @media (min-width: $desktop-width) {
     background-size: 100px;
-    background-position: 40px 20px;
+    background-position: 54px 38px;
   }
 
   & .variants__title {
@@ -57,36 +78,19 @@
 
   @media (min-width: $tablet-width) {
     background-size: 268px;
-    background-position: 354px 40px;
-    //text-align: left;
+    background-position: 411px 91px;
+    padding-right: 311px;
   }
 
   @media (min-width: $desktop-width) {
     background-size: 134px;
-    background-position: 20px 30px;
+    background-position: 35px 43px;
+    padding-right: 25px;
   }
 
   & .variants__title {
     margin-right: 32px;
     font-weight: 400;
-  }
-}
-
-.variants__title {
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: right;
-  margin-right: 20px;
-  margin-bottom: 36px;
-
-  @media (min-width: $tablet-width) {
-    text-align: left;
-    font-size: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 120px;
-    margin-bottom: 50px;
   }
 }
 
@@ -100,24 +104,38 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    width: 60%;
+    //width: 60%;
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 0;
+    margin-top: 19px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    margin-top: 68px;
   }
 }
 
 .variants__link {
   display: block;
-  padding-top: 8px;
+  padding-top: 5px;
   font-size: 16px;
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 0;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 26px;
+  }
 
   &::after {
     content: "";
@@ -127,7 +145,15 @@
     background-image: url("../img/arrow-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    margin-left: 20px;
+    margin-left: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 29px;
+    }
   }
 
   &:hover {

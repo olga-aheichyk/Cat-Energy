@@ -4,6 +4,7 @@
   margin-right: auto;
   margin-left: auto;
   width: 320px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 768px;

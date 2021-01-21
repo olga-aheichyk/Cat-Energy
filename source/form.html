@@ -18,7 +18,7 @@
           </picture>
         </a>
 
-        <nav class="navigation">
+        <nav class="navigation navigation--no-js">
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -60,7 +60,7 @@
                 <label class="form__label" for="cat_weight">
                   Вес (кг):<sup>*</sup>
                 </label>
-                <input class="form__input-text" type="number" name="cat-weight" id="cat_weight" placeholder="7" required>
+                <input class="form__input-text" type="number" name="cat-weight" id="cat_weight" min="0" placeholder="7" required>
               </div>
 
 
@@ -68,7 +68,7 @@
                 <label class="form__label" for="cat_age">
                   Возраст (лет):
                 </label>
-                <input class="form__input-text" type="number" name="cat-age" id="cat_age" placeholder="7">
+                <input class="form__input-text" type="number" name="cat-age" id="cat_age" min="0" placeholder="7">
               </div>
             </div>
 
@@ -110,7 +110,7 @@
                 <label class="form__label" for="phone">
                   Телефон:<sup>*</sup>
                 </label>
-                <input class="form__input-text form__input-text--phone" type="tel" name="owner-phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="form__input-text form__input-text--phone" type="tel" pattern="8([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{3}" name="owner-phone" id="phone" placeholder="8 (960) 900-60-90" required>
               </div>
             </div>
           </div>
@@ -168,16 +168,18 @@
       <section class="location">
         <div class="location__card">
           <h2 class="location__title">
-            Приглашаем к сотрудничеству дилеров!
+            Приглашаем к&nbsp;сотрудничеству дилеров!
           </h2>
           <p class="location__text">
-            ул. Большая Конюшенная, д. 19/8<br>
-            Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8
+            <span class="location__span">
+              Санкт-Петербург
+            </span>
           </p>
         </div>
 
         <div class="location__map">
-          <iframe class="location__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6194872569674!2d30.321109616096976!3d59.93845598187608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1605772073738!5m2!1sru!2sby" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe class="location__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6194872569674!2d30.321109616096976!3d59.93845598187608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1605772073738!5m2!1sru!2sby"></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/map-pin-desktop.webp 1x, img/webp/map-pin-desktop@2x.webp 2x">
             <source type="image/webp" srcset="img/webp/map-pin-mobile.webp 1x, img/webp/map-pin-mobile@2x.webp 2x">
@@ -192,25 +194,22 @@
         <div class="footer__wrapper">
           <div class="logo logo--footer">
             <img class="logo__image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
-            <!--<svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="file.svg#icon_logo_footer"></use>
-            </svg>-->
           </div>
 
           <div class="social">
-            <a class="social__item" href="https://vk.com/htmlacademy">
-              <svg class="social__icon" width="23" height="16" role="img" aria-label="Мы ВКонтакте">
-                <use xlink:href="img/file.svg#vk"></use>
+            <a class="social__item" href="https://vk.com/htmlacademy" aria-label="Мы ВКонтакте">
+              <svg class="social__icon" width="23" height="16" role="img">
+                <use xlink:href="img/sprite.svg#vkontakte-icon"></use>
               </svg>
             </a>
-            <a class="social__item" href="https://www.instagram.com/htmlacademy/">
-              <svg class="social__icon social__icon--ig" width="16" height="16" role="img" aria-label="Мы в Инстаграм">
-                <use xlink:href="img/file.svg#ig"></use>
+            <a class="social__item" href="https://www.instagram.com/htmlacademy/" aria-label="Мы в Инстаграм">
+              <svg class="social__icon social__icon--ig" width="16" height="16" role="img">
+                <use xlink:href="img/sprite.svg#instagram-icon"></use>
               </svg>
             </a>
-            <a class="social__item" href="https://www.facebook.com/htmlacademy">
-              <svg class="social__icon social__icon--fb" width="22" height="22" role="img" aria-label="Мы в Фейсбук">
-                <use xlink:href="img/file.svg#fb"></use>
+            <a class="social__item" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбук">
+              <svg class="social__icon social__icon--fb" width="22" height="22" role="img">
+                <use xlink:href="img/sprite.svg#facebook-icon"></use>
               </svg>
             </a>
           </div>
@@ -219,7 +218,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
               HTML Academy
               <svg class="copyright__logo" width="27" height="34" role="img">
-                <use xlink:href="img/file.svg#logo-academy-light"></use>
+                <use xlink:href="img/sprite.svg#htmlacademy-icon"></use>
               </svg>
             </a>
           </p>

@@ -1,12 +1,13 @@
 .intro {
   background-color: rgba($basic-green, 0.85);
-  min-height: 302px;
+  //min-height: 302px;
   color: $white;
   text-align: center;
   background-image: url("../img/index-bg-mobile.jpg"),
-    linear-gradient(to bottom, rgba($basic-green, 0.85) 67%, $white 67% 100%);
+    linear-gradient(to bottom, rgba($basic-green, 0.85) 63%, $white 63% 100%);
   background-repeat: no-repeat;
   background-position: center top;
+  margin-bottom: 0;
 
   @media (min-resolution: 2dppx) {
     background-color: $white;
@@ -20,9 +21,9 @@
     min-height: 850px;
     background-image: url("../img/index-can-tablet.png");
     background-color: $white;
-    background-position: center 261px;
-    padding-top: 33px;
-    padding-left: 88px;
+    background-position: center 263px;
+    //padding-top: 33px;
+    //padding-left: 88px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-can-tablet@2x.png");
@@ -32,7 +33,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: none;
-    min-height: 660px;
+    min-height: 500px;
     padding-left: 80px;
     padding-top: 80px;
   }
@@ -40,39 +41,55 @@
 
 .intro__wrapper {
   @include center-wrapper;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 118px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 41px;
+  }
 }
 
 .intro__title {
   font-size: 36px;
+  line-height: 36px;
   font-weight: 400;
-  padding-top: 22px;
-  padding-bottom: 10px;
+  padding-top: 29px;
+  //padding-bottom: 10px;
+  margin-bottom: 0;
   margin-top: 0;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 62px;
+    line-height: 60px;
     width: 88%;
+    padding-top: 63px;
   }
 
   @media (min-width: $desktop-width) {
     width: 500px;
+    padding-top: 28px;
   }
 }
 
 .intro__text {
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 277px;
+  margin-top: 23px;
+  margin-bottom: 300px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-bottom: 40px;
+    line-height: 20px;
+    margin-top: 41px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 65px;
+    margin-bottom: 52px;
   }
 }
 
@@ -84,7 +101,7 @@
     width: 280px;
     background-image: url("../img/index-can-mobile.png");
     position: absolute;
-    top: 25px;
+    top: 45px;
     left: 0;
 
     @media (min-resolution: 2dppx) {
@@ -99,8 +116,8 @@
     height: 499px;
     background-image: url("../img/index-can-desktop.png");
     position: absolute;
-    top: -150px;
-    left: 367px;
+    top: -246px;
+    left: 368px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-can-desktop@2x.png");
@@ -110,11 +127,19 @@
 }
 
 .intro .button {
+  font-size: 14px;
+  line-height: 18px;
+
   @media (min-width: $tablet-width) {
-    width: 40%;
+    font-size: 20px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 16px 23px;
+    margin-left: -3px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    padding: 16px 26px;
+    margin-left: 0;
   }
 }

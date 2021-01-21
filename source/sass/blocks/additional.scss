@@ -4,28 +4,28 @@
 
   @media (min-width: $desktop-width) {
     column-gap: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 84px;
   }
 }
 
 .additional__title {
   font-size: 24px;
   font-weight: 400;
-  padding-top: 27px;
-  padding-bottom: 25px;
+  margin-top: 43px;
+  margin-bottom: 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding-top: 46px;
-    padding-bottom: 70px;
+    margin-top: 26px;
     padding-left: 38px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
     grid-row: 1;
+    margin-top: 32px;
   }
 
   &::after {
@@ -34,12 +34,12 @@
     background-color: $basic-green;
     width: 100vw;
     position: absolute;
-    top: 40px;
+    top: 19px;
     left: calc((280px - 100vw) / 2);
 
     @media (min-width: $tablet-width) {
       left: calc((708px - 100vw) / 2);
-      top: 70px;
+      top: 21px;
     }
 
     @media (min-width: $desktop-width) {
@@ -61,11 +61,24 @@
     padding-left: 30px;
     margin-left: -30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: -77px;
+  }
 }
 
 .additional__list {
+  margin-top: 35px;
+
   @media (min-width: $desktop-width) {
     grid-column: 1;
     grid-row: 2;
+    margin-top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -34px;
   }
 }

@@ -20,16 +20,23 @@
 
   &--footer {
     width: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 38px;
+    padding-bottom: 28px;
+    padding-left: 3px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 
     @media (min-width: $tablet-width) {
       text-align: left;
+      padding-left: 0;
       margin-left: 0;
       margin-right: 0;
+      padding-top: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 33px;
     }
   }
 
