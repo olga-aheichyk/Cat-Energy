@@ -130,3 +130,9 @@
     }
   }
 }
+
+.how-it-work__span {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

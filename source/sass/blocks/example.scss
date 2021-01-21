@@ -292,7 +292,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    clip: rect(auto, 274px, auto, auto);
+    clip: rect(auto, auto, auto, 274px);
     top: -28px;
     transform: translateX(-47%);
   }

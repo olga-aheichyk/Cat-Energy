@@ -364,7 +364,7 @@
     margin-right: 2px;
   }
 
-  &:focus:valid {
+  &:valid {
     background-image: url("../img/icon-email-focus.svg");
   }
 
@@ -393,7 +393,7 @@
     margin-left: 7px;
   }
 
-  &:focus:valid {
+  &:valid {
     background-image: url("../img/icon-phone-focus.svg");
   }
 }
