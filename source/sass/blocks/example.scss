@@ -13,8 +13,8 @@
 .example__wrapper-around {
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
     margin-right: auto;
     margin-left: auto;
     display: grid;
@@ -62,11 +62,11 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     padding-top: 0;
+    margin-top: 38px;
   }
 
   @media (min-width: $desktop-width) {
-    //position: absolute;
-    //top: -150px;
+    margin-top: 25px;
   }
 }
 
@@ -80,13 +80,16 @@
     font-size: 16px;
     line-height: 24px;
     width: 98%;
-    margin-top: 63px;
-    padding-bottom: 42px;
+    margin-top: 53px;
+    padding-bottom: 29px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    padding-top: 60px;
+    padding-top: 0;
+    margin-top: 144px;
+    width: 100%;
+    padding-bottom: 58px;
   }
 }
 
@@ -212,7 +215,7 @@
     font-size: 20px;
     flex-grow: 0;
     //padding-top: 10px;
-    margin-top: 9px;
+    margin-top: 23px;
     margin-bottom: 0;
   }
 
@@ -267,7 +270,7 @@
 
 .example__comparison {
   @media (min-width: $tablet-width) {
-    min-height: 520px;
+    min-height: 514px;
     position: relative;
   }
 

@@ -11,6 +11,7 @@
   @media (min-width: $tablet-width) {
     margin-left: 65px;
     padding-bottom: 68px;
+    margin-top: 0;
   }
 }
 
@@ -54,6 +55,8 @@
     background-color: #dcdcdc;
     position: relative;
     margin-left: 28px;
+    align-self: center;
+    margin-top: 17px;
   }
 }
 

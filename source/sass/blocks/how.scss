@@ -27,6 +27,10 @@
     font-size: 60px;
     margin-top: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 41px;
+  }
 }
 
 .how-it-work__list {
@@ -45,10 +49,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 230px);
+    grid-template-columns: repeat(4, 250px);
     margin-left: auto;
     grid-template-rows: 280px;
-    column-gap: 94px;
+    column-gap: 74px;
+    margin-top: 70px;
   }
 }
 
@@ -101,7 +106,6 @@
   &--powder::after {
     @media (min-width: $tablet-width) {
       content: "2";
-      //right: -13px;
     }
   }
 
@@ -123,7 +127,6 @@
   &--time::after {
     @media (min-width: $tablet-width) {
       content: "4";
-      right: -20px;
     }
   }
 }
