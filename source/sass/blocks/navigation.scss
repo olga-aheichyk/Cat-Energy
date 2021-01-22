@@ -197,7 +197,7 @@
 
 .navigation__item--index.navigation__item--active {
   @media (min-width: $desktop-width) {
-    border-bottom: 3px solid $white;
+    border-bottom: 2px solid $white;
 
     &:hover {
       border-bottom: none;
