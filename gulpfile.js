@@ -91,10 +91,22 @@ exports.sprite = sprite;
 
 // Copy files to the folder build
 
+const copyFonts = (done) => {
+  return gulp.src(
+    "source/fonts/*.{woff2,woff}",
+    {
+      base: "source"
+  })
+    .pipe(gulp.dest("build"))
+  done();
+}
+
+exports.copyFonts = copyFonts;
+
 const copy = (done) => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
-    //"source/img/**/*.{jpg,png,svg}",
+    "source/img/**/*.{jpg,png,svg}",
   ], {
     base: "source"
   })
@@ -148,7 +160,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    copy,
+    copyFonts,
     scripts,
     sprite,
     images,
