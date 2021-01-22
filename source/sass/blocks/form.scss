@@ -556,11 +556,15 @@
 .form__input-radio:active + .form__label::before,
 .form__input-checkbox:active + .form__label::before,
 .form__input-radio:active + .form__label,
-.form__input-checkbox:active + .form__label,
-.form__input-radio:focus + .form__label::before,
-.form__input-checkbox:focus + .form__label::before {
+.form__input-checkbox:active + .form__label {
   border-color: $grey-hover;
   color: $grey-hover;
+}
+
+.form__input-radio:focus + .form__label::before,
+.form__input-checkbox:focus + .form__label::before {
+  outline: 2px solid $special-dark-grey;
+  outline-offset: -1px;
 }
 
 .form .button {
