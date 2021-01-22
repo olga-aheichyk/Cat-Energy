@@ -2,39 +2,41 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
   <body class="page__body">
-      <header class="header header--index">
-        <div class="header__wrapper">
-          <a class="logo logo--header">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
-            </picture>
-          </a>
+    <header class="header header--index">
+      <div class="header__wrapper">
+        <a class="logo logo--header">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
+          </picture>
+        </a>
 
-          <nav class="navigation navigation--no-js">
-            <button class="navigation__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <div class="navigation__list">
-              <a class="navigation__item navigation__item--active navigation__item--index" href="#">
-                Главная
-              </a>
-              <a class="navigation__item navigation__item--index" href="catalog.html">
-                Каталог продукции
-              </a>
-              <a class="navigation__item navigation__item--index" href="form.html">
-                Подбор программы
-              </a>
-            </div>
-          </nav>
-        </div>
+        <nav class="navigation navigation--no-js">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="navigation__list">
+            <a class="navigation__item navigation__item--active navigation__item--index" href="#">
+              Главная
+            </a>
+            <a class="navigation__item navigation__item--index" href="catalog.html">
+              Каталог продукции
+            </a>
+            <a class="navigation__item navigation__item--index" href="form.html">
+              Подбор программы
+            </a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
@@ -165,7 +167,7 @@
                   Было
                 </p>
                 <div class="range__scale">
-                  <div class="range__mark"></div>
+                  <div class="range__mark" aria-label="Слайдер"></div>
                 </div>
                 <p class="range__text">
                   Стало
@@ -240,5 +242,6 @@
     </footer>
 
     <script src="js/script.min.js"></script>
+
   </body>
 </html>
