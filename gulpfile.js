@@ -14,16 +14,6 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
 
-/* Task example
-
-const pages = () => {
-  return gulp.src("source/**.html")
-  .pipe(gulp.dest("source/html"))
-}
-
-exports.pages = pages;
-
-*/
 
 // Styles
 
@@ -101,6 +91,18 @@ exports.sprite = sprite;
 
 // Copy files to the folder build
 
+const copyFonts = (done) => {
+  return gulp.src(
+    "source/fonts/*.{woff2,woff}",
+    {
+      base: "source"
+  })
+    .pipe(gulp.dest("build"))
+  done();
+}
+
+exports.copyFonts = copyFonts;
+
 const copy = (done) => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
@@ -158,7 +160,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    copy,
+    copyFonts,
     scripts,
     sprite,
     images,
