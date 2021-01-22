@@ -23,7 +23,7 @@
   @media (max-width: $mobile-width-only) {
     content: "";
     width: 100vw;
-    height: 2px;
+    height: 1px;
     background-color: $border-grey-catalog;
     display: block;
     margin-left: calc((100vw - 280px) / -2);
@@ -239,7 +239,7 @@
     @media (max-width: $mobile-width-only) {
       content: "";
       width: 100%;
-      height: 2px;
+      height: 1px;
       background-color: $border-grey-catalog;
       display: block;
       position: absolute;
