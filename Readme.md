@@ -3,7 +3,7 @@
 * Студент: [Ольга Агейчик](https://up.htmlacademy.ru/adaptive/21/user/1577653).
 * Наставник: Антон Попов.
 
-**[Ссылка на деплой проекта]**(https://olga-aheichyk.github.io/cat-energy-publish/index.html)
+**[Ссылка на деплой проекта](https://olga-aheichyk.github.io/cat-energy-publish/index.html)**
 
 ---
 
